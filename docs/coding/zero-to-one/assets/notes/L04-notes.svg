@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#F7931E"/>
+    </linearGradient>
+    <linearGradient id="ideaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFEBEE"/>
+      <stop offset="100%" style="stop-color:#FFCDD2"/>
+    </linearGradient>
+    <linearGradient id="needGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8F5E9"/>
+      <stop offset="100%" style="stop-color:#C8E6C9"/>
+    </linearGradient>
+  </defs>
+  
+  <style>
+    .title { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-weight: 700; }
+    .subtitle { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-weight: 500; }
+    .text { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-weight: 400; }
+    .small { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-weight: 400; font-size: 10px; }
+  </style>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="#FAFAFA"/>
+  
+  <!-- 标题区 -->
+  <rect x="0" y="0" width="800" height="90" fill="url(#headerGrad)"/>
+  <text x="400" y="42" text-anchor="middle" class="title" font-size="26" fill="white">第4课：发现需求</text>
+  <text x="400" y="68" text-anchor="middle" class="subtitle" font-size="14" fill="white" opacity="0.9">从"想做点啥"到"解决什么问题"</text>
+  <text x="770" y="82" text-anchor="end" class="small" fill="white" opacity="0.8">04 / 19</text>
+  
+  <!-- 核心观点（黄色高亮） -->
+  <rect x="30" y="105" width="740" height="55" rx="8" fill="#FFF3CD" stroke="#F7931E" stroke-width="2"/>
+  <text x="50" y="130" class="subtitle" font-size="13" fill="#856404">💡 核心观点</text>
+  <text x="50" y="150" class="subtitle" font-size="15" fill="#856404">需求 = 别人愿意为之付费（花时间）的问题</text>
+  
+  <!-- 模块1: 思考框架 5W1H -->
+  <rect x="30" y="175" width="740" height="110" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  <rect x="30" y="175" width="740" height="28" rx="8" fill="#E3F2FD"/>
+  <rect x="30" y="195" width="740" height="8" fill="#E3F2FD"/>
+  <text x="400" y="194" text-anchor="middle" class="subtitle" font-size="14" fill="#1565C0">🔍 思考框架：5W1H问题清单</text>
+  
+  <g transform="translate(50, 215)">
+    <!-- 第一行 -->
+    <rect x="0" y="0" width="170" height="30" rx="4" fill="#E3F2FD"/>
+    <text x="85" y="20" text-anchor="middle" class="text" font-size="12" fill="#1976D2">Who 用户是谁？</text>
+    
+    <rect x="185" y="0" width="170" height="30" rx="4" fill="#E8F5E9"/>
+    <text x="270" y="20" text-anchor="middle" class="text" font-size="12" fill="#2E7D32">What 解决什么？</text>
+    
+    <rect x="370" y="0" width="170" height="30" rx="4" fill="#FFF3E0"/>
+    <text x="455" y="20" text-anchor="middle" class="text" font-size="12" fill="#E65100">Why 为什么需要？</text>
+    
+    <rect x="555" y="0" width="165" height="30" rx="4" fill="#F3E5F5"/>
+    <text x="637" y="20" text-anchor="middle" class="text" font-size="12" fill="#7B1FA2">When 何时用？</text>
+    
+    <!-- 第二行 -->
+    <rect x="90" y="40" width="170" height="30" rx="4" fill="#FFEBEE"/>
+    <text x="175" y="60" text-anchor="middle" class="text" font-size="12" fill="#C62828">Where 在哪用？</text>
+    
+    <rect x="275" y="40" width="170" height="30" rx="4" fill="#E0F7FA"/>
+    <text x="360" y="60" text-anchor="middle" class="text" font-size="12" fill="#00838F">How 怎么解决？</text>
+    
+    <rect x="460" y="40" width="170" height="30" rx="4" fill="#FBE9E7"/>
+    <text x="545" y="60" text-anchor="middle" class="text" font-size="12" fill="#D84315">How much 代价？</text>
+  </g>
+  
+  <!-- 模块2: 一句话模板 -->
+  <rect x="30" y="300" width="740" height="80" rx="8" fill="white" stroke="#4CAF50" stroke-width="2"/>
+  <rect x="30" y="300" width="740" height="26" rx="8" fill="#4CAF50"/>
+  <rect x="30" y="318" width="740" height="8" fill="#4CAF50"/>
+  <text x="400" y="319" text-anchor="middle" class="subtitle" font-size="14" fill="white">📝 一句话模板</text>
+  
+  <text x="60" y="345" class="subtitle" font-size="14" fill="#2E7D32">给【 什么人 】，解决【 什么问题 】，通过【 什么方式 】</text>
+  <line x1="60" y1="355" x2="740" y2="355" stroke="#A5D6A7" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="60" y="372" class="text" font-size="11" fill="#666">例：给本校学生，解决二手物品信息不流通的问题，通过校园专属闲置平台</text>
+  
+  <!-- 模块3: 痛点挖掘（左右分栏） -->
+  <!-- 卖家痛点 -->
+  <rect x="30" y="395" width="360" height="130" rx="8" fill="url(#ideaGrad)" stroke="#EF5350" stroke-width="1"/>
+  <rect x="30" y="395" width="360" height="24" rx="8" fill="#EF5350"/>
+  <rect x="30" y="411" width="360" height="8" fill="#EF5350"/>
+  <text x="210" y="412" text-anchor="middle" class="subtitle" font-size="13" fill="white">🔴 卖家痛点（毕业生）</text>
+  
+  <text x="50" y="440" class="text" font-size="12" fill="#424242">❓ 不知道谁要买，群发没人回</text>
+  <text x="335" y="440" class="text" font-size="10" fill="#EF5350">⭐⭐⭐</text>
+  <text x="50" y="462" class="text" font-size="12" fill="#424242">💔 低价贱卖甚至扔掉，心疼</text>
+  <text x="335" y="462" class="text" font-size="10" fill="#EF5350">⭐⭐</text>
+  <text x="50" y="484" class="text" font-size="12" fill="#424242">📅 毕业时间紧，处理压力大</text>
+  <text x="335" y="484" class="text" font-size="10" fill="#EF5350">⭐⭐</text>
+  <text x="50" y="506" class="text" font-size="12" fill="#424242">📞 约时间地点沟通成本高</text>
+  <text x="335" y="506" class="text" font-size="10" fill="#FF8A80">⭐</text>
+  
+  <!-- 买家痛点 -->
+  <rect x="410" y="395" width="360" height="130" rx="8" fill="url(#needGrad)" stroke="#4CAF50" stroke-width="1"/>
+  <rect x="410" y="395" width="360" height="24" rx="8" fill="#4CAF50"/>
+  <rect x="410" y="411" width="360" height="8" fill="#4CAF50"/>
+  <text x="590" y="412" text-anchor="middle" class="subtitle" font-size="13" fill="white">🟢 买家痛点（低年级）</text>
+  
+  <text x="430" y="440" class="text" font-size="12" fill="#424242">🔍 不知道谁在卖，错过好东西</text>
+  <text x="715" y="440" class="text" font-size="10" fill="#4CAF50">⭐⭐⭐</text>
+  <text x="430" y="462" class="text" font-size="12" fill="#424242">😰 不敢买，怕被骗/东西有问题</text>
+  <text x="715" y="462" class="text" font-size="10" fill="#4CAF50">⭐⭐</text>
+  <text x="430" y="484" class="text" font-size="12" fill="#424242">💰 想省钱买二手但信息分散</text>
+  <text x="715" y="484" class="text" font-size="10" fill="#4CAF50">⭐⭐</text>
+  <text x="430" y="506" class="text" font-size="12" fill="#424242">📍 不知道物品在哪自提</text>
+  <text x="715" y="506" class="text" font-size="10" fill="#A5D6A7">⭐</text>
+  
+  <!-- 模块4: MVP概念 -->
+  <rect x="30" y="540" width="740" height="115" rx="8" fill="white" stroke="#9C27B0" stroke-width="2"/>
+  <rect x="30" y="540" width="740" height="26" rx="8" fill="#9C27B0"/>
+  <rect x="30" y="558" width="740" height="8" fill="#9C27B0"/>
+  <text x="400" y="559" text-anchor="middle" class="subtitle" font-size="14" fill="white">📦 MVP = Minimum Viable Product 最小可用产品</text>
+  
+  <!-- 类比图示 -->
+  <g transform="translate(50, 575)">
+    <!-- 餐厅类比 -->
+    <rect x="0" y="0" width="200" height="70" rx="6" fill="#F3E5F5"/>
+    <text x="100" y="18" text-anchor="middle" class="subtitle" font-size="11" fill="#7B1FA2">🏠 开餐厅的类比</text>
+    <text x="100" y="38" text-anchor="middle" class="text" font-size="10" fill="#666">不会先花几百万装修</text>
+    <text x="100" y="54" text-anchor="middle" class="text" font-size="10" fill="#666">而是先做几道菜请朋友吃</text>
+    
+    <text x="230" y="40" class="title" font-size="20" fill="#9C27B0">→</text>
+    
+    <!-- 软件开发 -->
+    <rect x="260" y="0" width="200" height="70" rx="6" fill="#EDE7F6"/>
+    <text x="360" y="18" text-anchor="middle" class="subtitle" font-size="11" fill="#512DA8">💻 软件开发的类比</text>
+    <text x="360" y="38" text-anchor="middle" class="text" font-size="10" fill="#666">不会一上来做"全能平台"</text>
+    <text x="360" y="54" text-anchor="middle" class="text" font-size="10" fill="#666">而是先做核心功能验证想法</text>
+    
+    <text x="490" y="40" class="title" font-size="20" fill="#9C27B0">→</text>
+    
+    <!-- 本项目MVP -->
+    <rect x="520" y="0" width="220" height="70" rx="6" fill="#E1BEE7"/>
+    <text x="630" y="18" text-anchor="middle" class="subtitle" font-size="11" fill="#6A1B9A">🎓 本项目MVP</text>
+    <text x="630" y="38" text-anchor="middle" class="text" font-size="10" fill="#333">发布物品 + 浏览 + 联系卖家</text>
+    <text x="630" y="54" text-anchor="middle" class="text" font-size="10" fill="#999">聊天/支付/推荐算法？以后再说</text>
+  </g>
+  
+  <!-- 模块5: 需求vs想法（对比表格） -->
+  <rect x="30" y="670" width="740" height="110" rx="8" fill="white" stroke="#FF6B35" stroke-width="1"/>
+  <rect x="30" y="670" width="740" height="26" rx="8" fill="#FF6B35"/>
+  <rect x="30" y="688" width="740" height="8" fill="#FF6B35"/>
+  <text x="400" y="689" text-anchor="middle" class="subtitle" font-size="14" fill="white">⚡ 需求 vs 想法：关键区别</text>
+  
+  <!-- 表头 -->
+  <line x1="265" y1="700" x2="265" y2="770" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="535" y1="700" x2="535" y2="770" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="50" y1="725" x2="750" y2="725" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="50" y1="750" x2="750" y2="750" stroke="#E0E0E0" stroke-width="1"/>
+  
+  <text x="150" y="718" text-anchor="middle" class="subtitle" font-size="12" fill="#666">对比项</text>
+  <text x="400" y="718" text-anchor="middle" class="subtitle" font-size="12" fill="#EF5350">❌ 想法</text>
+  <text x="640" y="718" text-anchor="middle" class="subtitle" font-size="12" fill="#4CAF50">✅ 需求</text>
+  
+  <text x="150" y="742" text-anchor="middle" class="text" font-size="11" fill="#424242">定义</text>
+  <text x="400" y="742" text-anchor="middle" class="text" font-size="11" fill="#424242">灵光一闪，想做个东西</text>
+  <text x="640" y="742" text-anchor="middle" class="text" font-size="11" fill="#424242">有人愿意花时间/钱解决</text>
+  
+  <text x="150" y="765" text-anchor="middle" class="text" font-size="11" fill="#424242">例子</text>
+  <text x="400" y="765" text-anchor="middle" class="text" font-size="11" fill="#424242">"我想做个好用的App"</text>
+  <text x="640" y="765" text-anchor="middle" class="text" font-size="11" fill="#424242">"毕业生处理闲置物品困难"</text>
+  
+  <!-- 模块6: AI协作提示 -->
+  <rect x="30" y="795" width="740" height="65" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+  <text x="55" y="820" class="subtitle" font-size="13" fill="#1565C0">🤖 AI协作提示</text>
+  <text x="55" y="840" class="text" font-size="12" fill="#424242">和AI聊需求时，AI会追问你，帮你把模糊的想法变成结构化的问题。</text>
+  <text x="55" y="856" class="text" font-size="11" fill="#666">人类做决策、AI帮梳理 → 一起把"想做个东西"变成"解决什么问题"</text>
+  
+  <!-- 记忆口诀 -->
+  <rect x="30" y="880" width="740" height="55" rx="8" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2"/>
+  <text x="400" y="905" text-anchor="middle" class="subtitle" font-size="15" fill="#283593">📌 记忆口诀：先解决"有没有"，再解决"好不好"</text>
+  <text x="400" y="925" text-anchor="middle" class="text" font-size="12" fill="#5C6BC0">MVP思维：核心功能先跑起来，收集反馈再迭代</text>
+  
+  <!-- 页码 -->
+  <text x="770" y="975" text-anchor="end" class="text" font-size="11" fill="#BDBDBD">04 / 19</text>
+  
+  <!-- 装饰元素 -->
+  <circle cx="750" y="970" r="8" fill="none" stroke="#FF6B35" stroke-width="2"/>
+  <circle cx="750" y="970" r="3" fill="#FF6B35"/>
+</svg>

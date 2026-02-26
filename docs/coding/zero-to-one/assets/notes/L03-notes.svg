@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <!-- 橙色渐变 -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#F7931E"/>
+    </linearGradient>
+    <!-- 循环箭头标记 -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <style>
+    .title { font-family: 'Noto Sans SC', 'PingFang SC', sans-serif; font-size: 26px; font-weight: bold; }
+    .subtitle { font-family: 'Noto Sans SC', 'PingFang SC', sans-serif; font-size: 15px; font-weight: 600; }
+    .text { font-family: 'Noto Sans SC', 'PingFang SC', sans-serif; font-size: 13px; }
+    .small { font-family: 'Noto Sans SC', 'PingFang SC', sans-serif; font-size: 11px; }
+  </style>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="#FAFAFA"/>
+  
+  <!-- ==================== 标题区 ==================== -->
+  <rect x="0" y="0" width="800" height="90" fill="url(#headerGrad)"/>
+  <text x="400" y="48" text-anchor="middle" class="title" fill="white">第3课：人机协作范式</text>
+  <text x="400" y="75" text-anchor="middle" class="text" fill="rgba(255,255,255,0.9)">思考 → 执行 → 验收，循环迭代到满意</text>
+  
+  <!-- 页码 -->
+  <text x="770" y="75" text-anchor="end" class="small" fill="rgba(255,255,255,0.7)">03 / 19</text>
+  
+  <!-- ==================== 核心观点 ==================== -->
+  <rect x="30" y="105" width="740" height="55" rx="8" fill="#FFF3CD" stroke="#F7931E" stroke-width="2"/>
+  <text x="50" y="128" class="subtitle" fill="#856404">💡 核心观点</text>
+  <text x="50" y="150" class="text" fill="#856404">协作循环：人类思考 → AI执行 → 人类验收 → 不满意就改 → 循环</text>
+  
+  <!-- ==================== 协作循环图 ==================== -->
+  <rect x="30" y="175" width="740" height="180" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="50" y="198" class="subtitle" fill="#333">🔄 协作循环图</text>
+  
+  <!-- 循环框 -->
+  <!-- 思考 -->
+  <rect x="80" y="220" width="140" height="50" rx="25" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <text x="150" y="240" text-anchor="middle" class="subtitle" fill="#2E7D32">🤔 人类思考</text>
+  <text x="150" y="258" text-anchor="middle" class="small" fill="#666">想清楚要什么</text>
+  
+  <!-- 执行 -->
+  <rect x="330" y="220" width="140" height="50" rx="25" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+  <text x="400" y="240" text-anchor="middle" class="subtitle" fill="#1565C0">⚡ AI执行</text>
+  <text x="400" y="258" text-anchor="middle" class="small" fill="#666">根据需求实现</text>
+  
+  <!-- 验收 -->
+  <rect x="580" y="220" width="140" height="50" rx="25" fill="#FFF3E0" stroke="#FF9800" stroke-width="2"/>
+  <text x="650" y="240" text-anchor="middle" class="subtitle" fill="#E65100">✅ 人类验收</text>
+  <text x="650" y="258" text-anchor="middle" class="small" fill="#666">判断对不对</text>
+  
+  <!-- 修改/继续 -->
+  <rect x="330" y="300" width="140" height="40" rx="20" fill="#FFEBEE" stroke="#EF5350" stroke-width="2"/>
+  <text x="400" y="325" text-anchor="middle" class="subtitle" fill="#C62828">🔄 不满意？修改</text>
+  
+  <!-- 箭头连接 -->
+  <path d="M 220 245 L 325 245" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <path d="M 470 245 L 575 245" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <path d="M 650 270 L 650 295 L 475 320" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <path d="M 330 320 L 150 320 L 150 275" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" fill="none" stroke-dasharray="5,3"/>
+  
+  <!-- ==================== 人类职责 ==================== -->
+  <rect x="30" y="370" width="360" height="145" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <rect x="30" y="370" width="360" height="28" rx="8" fill="#4CAF50"/>
+  <rect x="30" y="390" width="360" height="8" fill="#4CAF50"/>
+  <text x="210" y="389" text-anchor="middle" class="subtitle" fill="white">👤 人类职责（你的工作）</text>
+  
+  <text x="50" y="425" class="text" fill="#333">📝 <tspan font-weight="600">描述需求</tspan> - 把模糊想法变清晰</text>
+  <text x="60" y="445" class="small" fill="#666">例："校园二手平台" → "学生可发布/浏览物品"</text>
+  
+  <text x="50" y="472" class="text" fill="#333">⚖️ <tspan font-weight="600">做决策</tspan> - AI给选项，你来选</text>
+  <text x="60" y="492" class="small" fill="#666">例：Vue还是React？SQLite还是MySQL？</text>
+  
+  <text x="50" y="512" class="text" fill="#333">✅ <tspan font-weight="600">判断结果</tspan> - 亲自验收，发现问题</text>
+  
+  <!-- ==================== AI职责 ==================== -->
+  <rect x="410" y="370" width="360" height="145" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+  <rect x="410" y="370" width="360" height="28" rx="8" fill="#2196F3"/>
+  <rect x="410" y="390" width="360" height="8" fill="#2196F3"/>
+  <text x="590" y="389" text-anchor="middle" class="subtitle" fill="white">🤖 AI职责（助手的工作）</text>
+  
+  <text x="430" y="425" class="text" fill="#333">👂 <tspan font-weight="600">理解需求</tspan> - 问问题确认理解</text>
+  <text x="440" y="445" class="small" fill="#666">例：需要哪些登录方式？记住状态吗？</text>
+  
+  <text x="430" y="472" class="text" fill="#333">📋 <tspan font-weight="600">给出方案</tspan> - 先说打算怎么做</text>
+  <text x="440" y="492" class="small" fill="#666">例：列出实现步骤，等你确认</text>
+  
+  <text x="430" y="512" class="text" fill="#333">⚡ <tspan font-weight="600">执行实现</tspan> - 写代码、创建文件</text>
+  
+  <!-- ==================== 问题描述模板 ==================== -->
+  <rect x="30" y="530" width="740" height="130" rx="8" fill="white" stroke="#9C27B0" stroke-width="2"/>
+  <text x="50" y="553" class="subtitle" fill="#7B1FA2">📋 向AI描述问题的模板</text>
+  
+  <!-- 错误示范 -->
+  <rect x="50" y="568" width="230" height="80" rx="6" fill="#FFEBEE"/>
+  <text x="165" y="590" text-anchor="middle" class="small" fill="#C62828" font-weight="600">❌ 错误示范</text>
+  <text x="60" y="610" class="small" fill="#666">"代码不跑了"</text>
+  <text x="60" y="628" class="small" fill="#666">"报错了"</text>
+  <text x="60" y="646" class="small" fill="#666">"运行不了"</text>
+  
+  <!-- 箭头 -->
+  <text x="305" y="615" text-anchor="middle" class="subtitle" fill="#9C27B0">→</text>
+  
+  <!-- 正确模板 -->
+  <rect x="330" y="568" width="420" height="80" rx="6" fill="#E8F5E9"/>
+  <text x="540" y="590" text-anchor="middle" class="small" fill="#2E7D32" font-weight="600">✅ 正确描述</text>
+  <text x="345" y="610" class="small" fill="#333">• 我在做什么：<tspan fill="#666">点击登录按钮</tspan></text>
+  <text x="345" y="626" class="small" fill="#333">• 预期结果：<tspan fill="#666">跳转到首页</tspan></text>
+  <text x="345" y="642" class="small" fill="#333">• 实际结果：<tspan fill="#666">页面没反应</tspan></text>
+  
+  <!-- ==================== 黄金法则 ==================== -->
+  <rect x="30" y="675" width="740" height="220" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="50" y="698" class="subtitle" fill="#333">⭐ 黄金法则（这5条很重要！）</text>
+  
+  <!-- 法则1 -->
+  <rect x="50" y="715" width="700" height="32" rx="4" fill="#E8F5E9"/>
+  <text x="65" y="736" class="text" fill="#2E7D32">① <tspan font-weight="600">一次只说一件事</tspan></text>
+  <text x="230" y="736" class="small" fill="#666">❌ 做登录+注册+个人中心 → ✅ 先做登录</text>
+  
+  <!-- 法则2 -->
+  <rect x="50" y="752" width="700" height="32" rx="4" fill="#E3F2FD"/>
+  <text x="65" y="773" class="text" fill="#1565C0">② <tspan font-weight="600">让AI先说方案</tspan></text>
+  <text x="230" y="773" class="small" fill="#666">让AI列出计划，你确认后再执行，避免方向跑偏</text>
+  
+  <!-- 法则3 -->
+  <rect x="50" y="789" width="700" height="32" rx="4" fill="#FFF3E0"/>
+  <text x="65" y="810" class="text" fill="#E65100">③ <tspan font-weight="600">验收要仔细</tspan></text>
+  <text x="230" y="810" class="small" fill="#666">点点点试一遍，输入极端情况（空的、很长的、特殊字符）</text>
+  
+  <!-- 法则4 -->
+  <rect x="50" y="826" width="340" height="32" rx="4" fill="#FCE4EC"/>
+  <text x="65" y="847" class="text" fill="#C2185B">④ <tspan font-weight="600">不满意就说出来</tspan></text>
+  <text x="230" y="847" class="small" fill="#666">你是产品的主人！</text>
+  
+  <!-- 法则5 -->
+  <rect x="410" y="826" width="340" height="32" rx="4" fill="#F3E5F5"/>
+  <text x="425" y="847" class="text" fill="#6A1B9A">⑤ <tspan font-weight="600">保存进度</tspan></text>
+  <text x="545" y="847" class="small" fill="#666">每做完一个功能git commit</text>
+  
+  <!-- 什么时候打断 -->
+  <rect x="50" y="865" width="340" height="22" rx="4" fill="#E8F5E9"/>
+  <text x="60" y="881" class="small" fill="#2E7D32">✅ 应该打断：做不需要的功能/方向偏了</text>
+  
+  <rect x="410" y="865" width="340" height="22" rx="4" fill="#FFEBEE"/>
+  <text x="420" y="881" class="small" fill="#C62828">❌ 不该打断：执行确认过的方案/装依赖</text>
+  
+  <!-- ==================== 记忆口诀 ==================== -->
+  <rect x="30" y="910" width="740" height="65" rx="8" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2"/>
+  <text x="400" y="938" text-anchor="middle" class="subtitle" fill="#283593">📌 记忆口诀</text>
+  <text x="400" y="962" text-anchor="middle" class="text" fill="#3F51B5" font-size="15px">一次只说一件事，做完验收再继续</text>
+  
+  <!-- 底部装饰线 -->
+  <line x1="100" y1="985" x2="700" y2="985" stroke="#E0E0E0" stroke-width="1"/>
+</svg>

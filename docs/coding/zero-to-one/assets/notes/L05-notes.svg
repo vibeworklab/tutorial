@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <!-- 橙色渐变 - 标题背景 -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#F7931E"/>
+    </linearGradient>
+    <!-- 黄色渐变 - 核心观点 -->
+    <linearGradient id="highlightGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF3CD"/>
+      <stop offset="100%" style="stop-color:#FFE082"/>
+    </linearGradient>
+    <!-- 阴影 -->
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <style>
+    .title { font-family: 'Noto Sans SC', 'PingFang SC', sans-serif; font-size: 26px; font-weight: bold; }
+    .subtitle { font-family: 'Noto Sans SC', 'PingFang SC', sans-serif; font-size: 15px; font-weight: 600; }
+    .text { font-family: 'Noto Sans SC', 'PingFang SC', sans-serif; font-size: 13px; font-weight: normal; }
+    .small { font-family: 'Noto Sans SC', 'PingFang SC', sans-serif; font-size: 11px; font-weight: normal; }
+    .number { font-family: 'Noto Sans SC', 'PingFang SC', sans-serif; font-size: 18px; font-weight: bold; }
+  </style>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="#FAFAFA"/>
+  
+  <!-- ========== 标题区 ========== -->
+  <rect x="0" y="0" width="800" height="90" fill="url(#headerGrad)"/>
+  <text x="400" y="42" text-anchor="middle" class="title" fill="white">第5课：定义需求</text>
+  <text x="400" y="68" text-anchor="middle" class="subtitle" fill="white">从"选项"到"决定" — 学会做取舍</text>
+  <text x="770" y="80" text-anchor="end" class="small" fill="rgba(255,255,255,0.8)">05 / 19</text>
+  
+  <!-- ========== 核心观点 ========== -->
+  <rect x="30" y="110" width="740" height="60" rx="8" fill="url(#highlightGrad)" stroke="#F7931E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="55" y="138" class="subtitle" fill="#856404">💡 核心观点</text>
+  <text x="55" y="158" class="text" fill="#856404">每个选择都有代价，没有完美方案——这就是权衡取舍</text>
+  
+  <!-- ========== 决策三原则 ========== -->
+  <rect x="30" y="190" width="740" height="130" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="30" y="190" width="740" height="28" rx="8" fill="#2196F3"/>
+  <rect x="30" y="210" width="740" height="8" fill="#2196F3"/>
+  <text x="400" y="210" text-anchor="middle" class="subtitle" fill="white">🎯 决策三原则</text>
+  
+  <!-- 原则1 -->
+  <rect x="50" y="230" width="230" height="75" rx="6" fill="#E3F2FD"/>
+  <circle cx="75" cy="255" r="15" fill="#1976D2"/>
+  <text x="75" y="260" text-anchor="middle" class="number" fill="white">1</text>
+  <text x="100" y="252" class="subtitle" fill="#1565C0">先"有没有"</text>
+  <text x="100" y="270" class="subtitle" fill="#1565C0">再"好不好"</text>
+  <text x="65" y="292" class="small" fill="#666">能用比完美更重要</text>
+  
+  <!-- 原则2 -->
+  <rect x="290" y="230" width="230" height="75" rx="6" fill="#E8F5E9"/>
+  <circle cx="315" cy="255" r="15" fill="#4CAF50"/>
+  <text x="315" y="260" text-anchor="middle" class="number" fill="white">2</text>
+  <text x="340" y="252" class="subtitle" fill="#2E7D32">能人工</text>
+  <text x="340" y="270" class="subtitle" fill="#2E7D32">就不自动</text>
+  <text x="305" y="292" class="small" fill="#666">量小的时候手动更快</text>
+  
+  <!-- 原则3 -->
+  <rect x="530" y="230" width="230" height="75" rx="6" fill="#FFF3E0"/>
+  <circle cx="555" cy="255" r="15" fill="#FF9800"/>
+  <text x="555" y="260" text-anchor="middle" class="number" fill="white">3</text>
+  <text x="580" y="252" class="subtitle" fill="#E65100">相信直觉</text>
+  <text x="580" y="270" class="subtitle" fill="#E65100">不迷信直觉</text>
+  <text x="545" y="292" class="small" fill="#666">随时可以改，别纠结</text>
+  
+  <!-- ========== 如果不做会怎样 ========== -->
+  <rect x="30" y="340" width="740" height="90" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="30" y="340" width="740" height="28" rx="8" fill="#9C27B0"/>
+  <rect x="30" y="360" width="740" height="8" fill="#9C27B0"/>
+  <text x="400" y="360" text-anchor="middle" class="subtitle" fill="white">🔍 判断功能优先级：如果不做会怎样？</text>
+  
+  <!-- 三个判断 -->
+  <rect x="50" y="378" width="230" height="40" rx="6" fill="#FFEBEE"/>
+  <text x="165" y="395" text-anchor="middle" class="text" fill="#C62828">❌ 用户不能用了</text>
+  <text x="165" y="410" text-anchor="middle" class="small" fill="#666">→ 核心功能，必须做</text>
+  
+  <rect x="290" y="378" width="230" height="40" rx="6" fill="#FFF3CD"/>
+  <text x="405" y="395" text-anchor="middle" class="text" fill="#856404">⚠️ 能用但体验差</text>
+  <text x="405" y="410" text-anchor="middle" class="small" fill="#666">→ 重要功能，看时间</text>
+  
+  <rect x="530" y="378" width="230" height="40" rx="6" fill="#E8F5E9"/>
+  <text x="645" y="395" text-anchor="middle" class="text" fill="#2E7D32">✅ 没啥影响</text>
+  <text x="645" y="410" text-anchor="middle" class="small" fill="#666">→ 锦上添花，以后说</text>
+  
+  <!-- ========== 功能清单 ========== -->
+  <rect x="30" y="450" width="740" height="145" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="30" y="450" width="740" height="28" rx="8" fill="#00BCD4"/>
+  <rect x="30" y="470" width="740" height="8" fill="#00BCD4"/>
+  <text x="400" y="470" text-anchor="middle" class="subtitle" fill="white">📋 MVP功能清单</text>
+  
+  <!-- 用户模块 -->
+  <rect x="50" y="488" width="230" height="95" rx="6" fill="#E0F7FA" stroke="#00BCD4" stroke-width="1"/>
+  <text x="165" y="508" text-anchor="middle" class="subtitle" fill="#00838F">👤 用户模块</text>
+  <line x1="60" y1="516" x2="270" y2="516" stroke="#80DEEA"/>
+  <text x="65" y="532" class="small" fill="#333">• 注册（手机号）</text>
+  <text x="65" y="548" class="small" fill="#333">• 实名认证（校园卡）</text>
+  <text x="65" y="564" class="small" fill="#333">• 登录/登出</text>
+  <text x="65" y="580" class="small" fill="#333">• 个人中心</text>
+  
+  <!-- 物品模块 -->
+  <rect x="290" y="488" width="230" height="95" rx="6" fill="#FFF8E1" stroke="#FFC107" stroke-width="1"/>
+  <text x="405" y="508" text-anchor="middle" class="subtitle" fill="#FF8F00">📦 物品模块</text>
+  <line x1="300" y1="516" x2="510" y2="516" stroke="#FFE082"/>
+  <text x="305" y="532" class="small" fill="#333">• 发布物品</text>
+  <text x="305" y="548" class="small" fill="#333">• AI内容审核</text>
+  <text x="305" y="564" class="small" fill="#333">• 编辑/下架</text>
+  <text x="305" y="580" class="small" fill="#333">• 浏览列表/搜索</text>
+  
+  <!-- 交互模块 -->
+  <rect x="530" y="488" width="230" height="95" rx="6" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1"/>
+  <text x="645" y="508" text-anchor="middle" class="subtitle" fill="#7B1FA2">💫 交互模块</text>
+  <line x1="540" y1="516" x2="750" y2="516" stroke="#CE93D8"/>
+  <text x="545" y="532" class="small" fill="#333">• 收藏物品</text>
+  <text x="545" y="548" class="small" fill="#888">（聊天-后加）</text>
+  <text x="545" y="564" class="small" fill="#888">（支付-后加）</text>
+  <text x="545" y="580" class="small" fill="#888">（评价-后加）</text>
+  
+  <!-- ========== MVP边界 ========== -->
+  <rect x="30" y="610" width="740" height="115" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="30" y="610" width="740" height="28" rx="8" fill="#4CAF50"/>
+  <rect x="30" y="630" width="740" height="8" fill="#4CAF50"/>
+  <text x="400" y="630" text-anchor="middle" class="subtitle" fill="white">🚧 MVP边界：做什么、不做什么</text>
+  
+  <!-- 必须有 -->
+  <rect x="50" y="648" width="230" height="65" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <text x="165" y="668" text-anchor="middle" class="subtitle" fill="#2E7D32">✅ 必须有</text>
+  <text x="65" y="688" class="small" fill="#333">• 注册登录</text>
+  <text x="65" y="704" class="small" fill="#333">• 发布/浏览物品 · 联系方式</text>
+  
+  <!-- 可以后加 -->
+  <rect x="290" y="648" width="230" height="65" rx="6" fill="#FFF3CD" stroke="#FFC107" stroke-width="2"/>
+  <text x="405" y="668" text-anchor="middle" class="subtitle" fill="#856404">⭕ 可以后加</text>
+  <text x="305" y="688" class="small" fill="#333">• 聊天功能</text>
+  <text x="305" y="704" class="small" fill="#333">• 支付/推荐/评价</text>
+  
+  <!-- 暂不考虑 -->
+  <rect x="530" y="648" width="230" height="65" rx="6" fill="#FFEBEE" stroke="#EF5350" stroke-width="2"/>
+  <text x="645" y="668" text-anchor="middle" class="subtitle" fill="#C62828">❌ 暂不考虑</text>
+  <text x="545" y="688" class="small" fill="#333">• 视频展示</text>
+  <text x="545" y="704" class="small" fill="#333">• 拍卖/物流跟踪</text>
+  
+  <!-- ========== 权衡取舍表 ========== -->
+  <rect x="30" y="745" width="740" height="120" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="30" y="745" width="740" height="28" rx="8" fill="#FF5722"/>
+  <rect x="30" y="765" width="740" height="8" fill="#FF5722"/>
+  <text x="400" y="765" text-anchor="middle" class="subtitle" fill="white">⚖️ 权衡取舍表：每个选择都有代价</text>
+  
+  <!-- 表头 -->
+  <rect x="50" y="783" width="150" height="24" rx="4" fill="#FBE9E7"/>
+  <text x="125" y="799" text-anchor="middle" class="small" fill="#5D4037">选择</text>
+  <rect x="210" y="783" width="260" height="24" rx="4" fill="#E8F5E9"/>
+  <text x="340" y="799" text-anchor="middle" class="small" fill="#2E7D32">✅ 好处</text>
+  <rect x="480" y="783" width="280" height="24" rx="4" fill="#FFEBEE"/>
+  <text x="620" y="799" text-anchor="middle" class="small" fill="#C62828">❌ 代价</text>
+  
+  <!-- 行1 -->
+  <text x="60" y="822" class="small" fill="#333">对接学校</text>
+  <text x="220" y="822" class="small" fill="#4CAF50">最权威</text>
+  <text x="490" y="822" class="small" fill="#EF5350">周期长、要审批</text>
+  
+  <!-- 行2 -->
+  <text x="60" y="842" class="small" fill="#333">上传校园卡</text>
+  <text x="220" y="842" class="small" fill="#4CAF50">简单快速</text>
+  <text x="490" y="842" class="small" fill="#EF5350">可能有人造假</text>
+  
+  <!-- 行3 -->
+  <text x="60" y="862" class="small" fill="#333">先发后审</text>
+  <text x="220" y="862" class="small" fill="#4CAF50">用户体验好</text>
+  <text x="490" y="862" class="small" fill="#EF5350">可能有违规内容</text>
+  
+  <!-- ========== 记忆口诀 ========== -->
+  <rect x="30" y="885" width="740" height="70" rx="8" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2" filter="url(#shadow)"/>
+  <text x="400" y="915" text-anchor="middle" class="subtitle" fill="#283593">📌 记忆口诀</text>
+  <text x="400" y="940" text-anchor="middle" class="text" fill="#3F51B5">MVP边界：核心必须有，锦上添花以后说</text>
+  
+  <!-- 底部装饰线 -->
+  <rect x="30" y="970" width="740" height="4" rx="2" fill="url(#headerGrad)"/>
+  
+  <!-- 小贴士 -->
+  <text x="400" y="990" text-anchor="middle" class="small" fill="#999">做产品就是做选择，没有对错，只有取舍</text>
+</svg>

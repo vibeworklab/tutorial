@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#F7931E"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="#FAFAFA"/>
+  
+  <!-- 标题区 -->
+  <rect x="0" y="0" width="800" height="90" fill="url(#headerGrad)"/>
+  <text x="400" y="45" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" fill="white">第10课 浏览搜索</text>
+  <text x="400" y="72" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" fill="white">找到想要的东西 · 列表与分页</text>
+  
+  <!-- 核心观点 -->
+  <rect x="30" y="110" width="740" height="55" rx="8" fill="#FFF3CD" stroke="#F7931E" stroke-width="2"/>
+  <text x="50" y="138" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="#856404">💡 核心观点</text>
+  <text x="50" y="158" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="13" fill="#856404">模糊搜索用 LIKE '%关键词%'，分页用 offset+limit</text>
+  
+  <!-- 浏览需求优先级 -->
+  <rect x="30" y="185" width="740" height="115" rx="8" fill="white" stroke="#9E9E9E" stroke-width="1"/>
+  <rect x="30" y="185" width="740" height="28" rx="8" fill="#607D8B"/>
+  <text x="400" y="204" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">📊 浏览需求优先级（MVP原则）</text>
+  
+  <g transform="translate(50, 230)">
+    <rect x="0" y="0" width="130" height="55" rx="4" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="65" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#2E7D32">P0 必须有</text>
+    <text x="65" y="35" text-anchor="middle" font-size="10" fill="#333">列表展示</text>
+    <text x="65" y="50" text-anchor="middle" font-size="9" fill="#666">否则看不到物品</text>
+  </g>
+  
+  <g transform="translate(200, 230)">
+    <rect x="0" y="0" width="130" height="55" rx="4" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+    <text x="65" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565C0">P1 优先做</text>
+    <text x="65" y="35" text-anchor="middle" font-size="10" fill="#333">关键词搜索</text>
+    <text x="65" y="50" text-anchor="middle" font-size="9" fill="#666">很实用</text>
+  </g>
+  
+  <g transform="translate(350, 230)">
+    <rect x="0" y="0" width="130" height="55" rx="4" fill="#FFF8E1" stroke="#FFA000" stroke-width="2"/>
+    <text x="65" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">P2 可以后做</text>
+    <text x="65" y="35" text-anchor="middle" font-size="10" fill="#333">分类筛选</text>
+    <text x="65" y="50" text-anchor="middle" font-size="9" fill="#666">锦上添花</text>
+  </g>
+  
+  <g transform="translate(500, 230)">
+    <rect x="0" y="0" width="130" height="55" rx="4" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="2"/>
+    <text x="65" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#616161">P3 暂不做</text>
+    <text x="65" y="35" text-anchor="middle" font-size="10" fill="#333">分页加载</text>
+    <text x="65" y="50" text-anchor="middle" font-size="9" fill="#666">物品少时不需要</text>
+  </g>
+  
+  <text x="660" y="260" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#FF6B35">先做最核心的！</text>
+  
+  <!-- 列表接口 -->
+  <rect x="30" y="315" width="355" height="160" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+  <rect x="30" y="315" width="355" height="28" rx="8" fill="#2196F3"/>
+  <text x="207" y="334" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">📡 列表接口设计</text>
+  
+  <text x="50" y="365" font-family="Consolas, monospace" font-size="11" fill="#1565C0">GET /api/items</text>
+  <text x="50" y="385" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#666">参数：keyword / categoryId / page / pageSize</text>
+  
+  <line x1="50" y1="400" x2="370" y2="400" stroke="#90CAF9"/>
+  
+  <text x="50" y="420" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" font-weight="bold" fill="#1565C0">返回格式：</text>
+  <text x="50" y="440" font-family="Consolas, monospace" font-size="10" fill="#666">{ items: [...], total: 100, page: 1, pageSize: 20 }</text>
+  
+  <text x="50" y="465" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#4CAF50">✓ 只显示 status: 'available' 的物品</text>
+  
+  <!-- 模糊搜索 -->
+  <rect x="415" y="315" width="355" height="160" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <rect x="415" y="315" width="355" height="28" rx="8" fill="#4CAF50"/>
+  <text x="592" y="334" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">🔍 模糊搜索 vs 精确搜索</text>
+  
+  <text x="435" y="365" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#C62828">❌ 精确搜索：只找标题="自行车"的</text>
+  <text x="435" y="385" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#2E7D32">✅ 模糊搜索：找标题包含"自行车"的</text>
+  <text x="435" y="405" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#666">→ "二手自行车"、"山地自行车"都能找到</text>
+  
+  <line x1="435" y1="420" x2="750" y2="420" stroke="#A5D6A7"/>
+  
+  <text x="435" y="445" font-family="Consolas, monospace" font-size="11" fill="#1565C0">WHERE title LIKE '%关键词%'</text>
+  <text x="435" y="465" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#666">% 是通配符，匹配任意字符</text>
+  
+  <!-- 分页原理 -->
+  <rect x="30" y="490" width="355" height="155" rx="8" fill="#FFF8E1" stroke="#FFA000" stroke-width="2"/>
+  <rect x="30" y="490" width="355" height="28" rx="8" fill="#FFA000"/>
+  <text x="207" y="509" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">📄 分页原理</text>
+  
+  <text x="50" y="540" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#E65100">一次性返回1000条：慢、卡、浪费！</text>
+  <text x="50" y="560" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#2E7D32">分页返回：每次20条，要看更多再请求</text>
+  
+  <line x1="50" y1="575" x2="370" y2="575" stroke="#FFE0B2"/>
+  
+  <text x="50" y="598" font-family="Consolas, monospace" font-size="10" fill="#1565C0">第1页：offset=0, limit=20 → 第1-20条</text>
+  <text x="50" y="618" font-family="Consolas, monospace" font-size="10" fill="#1565C0">第2页：offset=20, limit=20 → 第21-40条</text>
+  <text x="50" y="638" font-family="Consolas, monospace" font-size="10" fill="#1565C0">offset = (page - 1) * pageSize</text>
+  
+  <!-- Grid布局 -->
+  <rect x="415" y="490" width="355" height="155" rx="8" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2"/>
+  <rect x="415" y="490" width="355" height="28" rx="8" fill="#9C27B0"/>
+  <text x="592" y="509" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">📐 Grid 响应式布局</text>
+  
+  <text x="435" y="540" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#666">效果：屏幕宽就多显示几列，屏幕窄就少显示几列</text>
+  
+  <text x="435" y="570" font-family="Consolas, monospace" font-size="10" fill="#7B1FA2">.item-list {</text>
+  <text x="445" y="588" font-family="Consolas, monospace" font-size="10" fill="#7B1FA2">display: grid;</text>
+  <text x="445" y="606" font-family="Consolas, monospace" font-size="10" fill="#7B1FA2">grid-template-columns:</text>
+  <text x="465" y="624" font-family="Consolas, monospace" font-size="10" fill="#7B1FA2">repeat(auto-fill, minmax(220px, 1fr));</text>
+  <text x="445" y="642" font-family="Consolas, monospace" font-size="10" fill="#7B1FA2">gap: 20px;</text>
+  <text x="435" y="660" font-family="Consolas, monospace" font-size="10" fill="#7B1FA2">}</text>
+  
+  <!-- 时间格式化 -->
+  <rect x="30" y="660" width="355" height="110" rx="8" fill="white" stroke="#9E9E9E" stroke-width="1"/>
+  <rect x="30" y="660" width="355" height="26" rx="8" fill="#78909C"/>
+  <text x="207" y="678" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="white">⏰ 时间格式化</text>
+  
+  <text x="50" y="708" font-family="Consolas, monospace" font-size="10" fill="#666">const diff = (Date.now() - new Date(time)) / 1000 / 60;</text>
+  <text x="50" y="728" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#2E7D32">diff &lt; 60 → "刚刚"</text>
+  <text x="50" y="746" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#2E7D32">diff &lt; 1440 → "X小时前"</text>
+  <text x="50" y="764" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#2E7D32">否则 → "X天前"</text>
+  
+  <!-- 前端逻辑 -->
+  <rect x="415" y="660" width="355" height="110" rx="8" fill="white" stroke="#9E9E9E" stroke-width="1"/>
+  <rect x="415" y="660" width="355" height="26" rx="8" fill="#78909C"/>
+  <text x="592" y="678" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="white">🔄 前端分页逻辑</text>
+  
+  <text x="435" y="708" font-family="Consolas, monospace" font-size="10" fill="#666">// 首次加载</text>
+  <text x="435" y="724" font-family="Consolas, monospace" font-size="10" fill="#1565C0">page.value = 1; loadItems();</text>
+  <text x="435" y="742" font-family="Consolas, monospace" font-size="10" fill="#666">// 加载更多</text>
+  <text x="435" y="758" font-family="Consolas, monospace" font-size="10" fill="#1565C0">page.value++; loadItems(true); // 追加</text>
+  
+  <!-- 关键代码 -->
+  <rect x="30" y="785" width="740" height="110" rx="8" fill="#263238"/>
+  <text x="50" y="813" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#80CBC4">⚡ 关键代码片段</text>
+  <g font-family="Consolas, Monaco, monospace" font-size="10">
+    <text x="50" y="838" fill="#A5D6A7">// 模糊搜索</text>
+    <text x="50" y="856" fill="#CE93D8">where.title = { [Op.like]: `%${keyword}%` };</text>
+    <text x="420" y="838" fill="#A5D6A7">// 分页查询</text>
+    <text x="420" y="856" fill="#CE93D8">offset: (page - 1) * pageSize, limit: pageSize</text>
+    <text x="50" y="880" fill="#A5D6A7">// 关联查询发布者信息</text>
+    <text x="50" y="898" fill="#CE93D8">include: [{ model: User, attributes: ['id', 'nickname', 'avatar'] }]</text>
+  </g>
+  
+  <!-- 记忆口诀 -->
+  <rect x="30" y="920" width="740" height="60" rx="8" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2"/>
+  <text x="400" y="948" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="16" font-weight="bold" fill="#283593">📌 记忆口诀</text>
+  <text x="400" y="970" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" fill="#3F51B5">模糊搜索用%，分页用offset+limit</text>
+  
+  <!-- 页码 -->
+  <text x="770" y="990" text-anchor="end" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#999">10 / 19</text>
+</svg>

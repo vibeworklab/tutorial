@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <defs>
+    <style>
+      .title{font:bold 26px "PingFang SC","Microsoft YaHei",sans-serif}
+      .subtitle{font:500 15px "PingFang SC","Microsoft YaHei",sans-serif}
+      .text{font:400 12px "PingFang SC","Microsoft YaHei",sans-serif}
+      .small{font:400 10px "PingFang SC","Microsoft YaHei",sans-serif}
+      .code{font:400 11px "SF Mono","Consolas",monospace}
+    </style>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="#FAFAFA"/>
+  
+  <!-- 页码 -->
+  <text x="760" y="30" class="small" fill="#999" text-anchor="end">14/19</text>
+  
+  <!-- 标题区 - 橙色 -->
+  <rect x="30" y="45" width="740" height="70" rx="8" fill="#FF6B35"/>
+  <text x="400" y="85" class="title" fill="white" text-anchor="middle">L14 部署上线</text>
+  <text x="400" y="105" class="subtitle" fill="rgba(255,255,255,0.9)" text-anchor="middle">让你的项目被全世界看到</text>
+  
+  <!-- 核心观点 - 黄色高亮 -->
+  <rect x="30" y="130" width="740" height="55" rx="6" fill="#FFF8E1" stroke="#FFC107" stroke-width="2"/>
+  <text x="50" y="155" class="subtitle" fill="#F57C00" font-weight="bold">💡 核心观点</text>
+  <text x="50" y="175" class="text" fill="#333">部署 = 把项目从你的电脑搬到云服务器，24小时运行</text>
+  
+  <!-- 模块1: 部署对比 -->
+  <rect x="30" y="200" width="355" height="110" rx="6" fill="white" stroke="#E0E0E0"/>
+  <text x="45" y="225" class="subtitle" fill="#333">🖥️ 本地运行</text>
+  <text x="45" y="248" class="text" fill="#666">• 只有你自己能访问</text>
+  <text x="45" y="268" class="text" fill="#666">• 关机就没了</text>
+  <text x="45" y="288" class="text" fill="#666">• localhost:3000</text>
+  <text x="45" y="305" class="small" fill="#EF5350">❌ 适合开发，不适合上线</text>
+  
+  <rect x="415" y="200" width="355" height="110" rx="6" fill="white" stroke="#E0E0E0"/>
+  <text x="430" y="225" class="subtitle" fill="#333">☁️ 云服务器</text>
+  <text x="430" y="248" class="text" fill="#666">• 全世界都能访问</text>
+  <text x="430" y="268" class="text" fill="#666">• 24小时不关机</text>
+  <text x="430" y="288" class="text" fill="#666">• 123.45.67.89（公网IP）</text>
+  <text x="430" y="305" class="small" fill="#4CAF50">✅ 适合上线运营</text>
+  
+  <!-- 箭头 -->
+  <text x="390" y="260" class="title" fill="#FF6B35" text-anchor="middle">→</text>
+  
+  <!-- 模块2: 方案选择 -->
+  <rect x="30" y="325" width="740" height="130" rx="6" fill="white" stroke="#E0E0E0"/>
+  <text x="45" y="350" class="subtitle" fill="#333">📊 部署方案对比</text>
+  
+  <!-- 表格 -->
+  <line x1="45" y1="365" x2="755" y2="365" stroke="#E0E0E0"/>
+  <text x="55" y="385" class="text" fill="#666" font-weight="bold">方案</text>
+  <text x="180" y="385" class="text" fill="#666" font-weight="bold">费用</text>
+  <text x="300" y="385" class="text" fill="#666" font-weight="bold">优点</text>
+  <text x="580" y="385" class="text" fill="#666" font-weight="bold">适合</text>
+  
+  <line x1="45" y1="395" x2="755" y2="395" stroke="#E0E0E0"/>
+  <text x="55" y="415" class="text" fill="#2196F3">⭐ 阿里云</text>
+  <text x="180" y="415" class="text" fill="#333">~11元/月</text>
+  <text x="300" y="415" class="text" fill="#4CAF50">稳定、文档全、学生优惠</text>
+  <text x="580" y="415" class="text" fill="#666">推荐首选</text>
+  
+  <text x="55" y="440" class="text" fill="#2196F3">腾讯云</text>
+  <text x="180" y="440" class="text" fill="#333">~10元/月</text>
+  <text x="300" y="440" class="text" fill="#4CAF50">价格便宜</text>
+  <text x="580" y="440" class="text" fill="#666">预算紧张</text>
+  
+  <text x="55" y="465" class="text" fill="#9E9E9E">内网穿透</text>
+  <text x="180" y="465" class="text" fill="#4CAF50">免费</text>
+  <text x="300" y="465" class="text" fill="#EF5350">电脑要一直开</text>
+  <text x="580" y="465" class="text" fill="#666">临时展示</text>
+  
+  <!-- 模块3: 部署步骤 -->
+  <rect x="30" y="470" width="740" height="160" rx="6" fill="white" stroke="#E0E0E0"/>
+  <text x="45" y="495" class="subtitle" fill="#333">🚀 部署五步走</text>
+  
+  <!-- 步骤流程 -->
+  <rect x="50" y="510" width="120" height="50" rx="4" fill="#E3F2FD"/>
+  <text x="110" y="535" class="text" fill="#1976D2" text-anchor="middle" font-weight="bold">① 买服务器</text>
+  <text x="110" y="550" class="small" fill="#666" text-anchor="middle">阿里云学生机</text>
+  
+  <text x="185" y="540" class="subtitle" fill="#FF6B35">→</text>
+  
+  <rect x="200" y="510" width="120" height="50" rx="4" fill="#E3F2FD"/>
+  <text x="260" y="535" class="text" fill="#1976D2" text-anchor="middle" font-weight="bold">② 装环境</text>
+  <text x="260" y="550" class="small" fill="#666" text-anchor="middle">Node.js + PM2</text>
+  
+  <text x="335" y="540" class="subtitle" fill="#FF6B35">→</text>
+  
+  <rect x="350" y="510" width="120" height="50" rx="4" fill="#E3F2FD"/>
+  <text x="410" y="535" class="text" fill="#1976D2" text-anchor="middle" font-weight="bold">③ 传代码</text>
+  <text x="410" y="550" class="small" fill="#666" text-anchor="middle">git clone</text>
+  
+  <text x="485" y="540" class="subtitle" fill="#FF6B35">→</text>
+  
+  <rect x="500" y="510" width="120" height="50" rx="4" fill="#E3F2FD"/>
+  <text x="560" y="535" class="text" fill="#1976D2" text-anchor="middle" font-weight="bold">④ 启动</text>
+  <text x="560" y="550" class="small" fill="#666" text-anchor="middle">pm2 start</text>
+  
+  <text x="635" y="540" class="subtitle" fill="#FF6B35">→</text>
+  
+  <rect x="650" y="510" width="120" height="50" rx="4" fill="#E8F5E9"/>
+  <text x="710" y="535" class="text" fill="#388E3C" text-anchor="middle" font-weight="bold">⑤ 配域名</text>
+  <text x="710" y="550" class="small" fill="#666" text-anchor="middle">Nginx + HTTPS</text>
+  
+  <!-- 关键命令 -->
+  <rect x="50" y="575" width="700" height="45" rx="4" fill="#263238"/>
+  <text x="65" y="595" class="code" fill="#80CBC4"># 连接服务器</text>
+  <text x="65" y="612" class="code" fill="#A5D6A7">ssh root@你的IP</text>
+  <text x="250" y="595" class="code" fill="#80CBC4"># 安装环境</text>
+  <text x="250" y="612" class="code" fill="#A5D6A7">apt install nodejs</text>
+  <text x="450" y="595" class="code" fill="#80CBC4"># 启动服务</text>
+  <text x="450" y="612" class="code" fill="#A5D6A7">pm2 start npm -- start</text>
+  
+  <!-- 模块4: 核心概念 -->
+  <rect x="30" y="645" width="355" height="120" rx="6" fill="white" stroke="#E0E0E0"/>
+  <text x="45" y="670" class="subtitle" fill="#333">🔧 核心概念</text>
+  
+  <text x="45" y="695" class="text" fill="#2196F3" font-weight="bold">服务器</text>
+  <text x="100" y="695" class="text" fill="#666">= 别人的电脑，你租来用</text>
+  
+  <text x="45" y="715" class="text" fill="#2196F3" font-weight="bold">安全组</text>
+  <text x="100" y="715" class="text" fill="#666">= 防火墙，控制端口开放</text>
+  
+  <text x="45" y="735" class="text" fill="#2196F3" font-weight="bold">Nginx</text>
+  <text x="100" y="735" class="text" fill="#666">= 流量分发，托管前端+代理后端</text>
+  
+  <text x="45" y="755" class="text" fill="#2196F3" font-weight="bold">PM2</text>
+  <text x="100" y="755" class="text" fill="#666">= 进程守护，崩溃自动重启</text>
+  
+  <!-- 模块5: 常用端口 -->
+  <rect x="415" y="645" width="355" height="120" rx="6" fill="white" stroke="#E0E0E0"/>
+  <text x="430" y="670" class="subtitle" fill="#333">🔢 常用端口</text>
+  
+  <rect x="430" y="680" width="60" height="24" rx="4" fill="#E8F5E9"/>
+  <text x="460" y="697" class="text" fill="#388E3C" text-anchor="middle">22</text>
+  <text x="500" y="697" class="text" fill="#666">SSH远程连接</text>
+  
+  <rect x="430" y="710" width="60" height="24" rx="4" fill="#E8F5E9"/>
+  <text x="460" y="727" class="text" fill="#388E3C" text-anchor="middle">80</text>
+  <text x="500" y="727" class="text" fill="#666">HTTP网页</text>
+  
+  <rect x="430" y="740" width="60" height="24" rx="4" fill="#E8F5E9"/>
+  <text x="460" y="757" class="text" fill="#388E3C" text-anchor="middle">443</text>
+  <text x="500" y="757" class="text" fill="#666">HTTPS加密网页</text>
+  
+  <rect x="620" y="680" width="60" height="24" rx="4" fill="#FFF3E0"/>
+  <text x="650" y="697" class="text" fill="#F57C00" text-anchor="middle">3000</text>
+  <text x="690" y="697" class="text" fill="#666">Node.js</text>
+  
+  <rect x="620" y="710" width="60" height="24" rx="4" fill="#FFF3E0"/>
+  <text x="650" y="727" class="text" fill="#F57C00" text-anchor="middle">3306</text>
+  <text x="690" y="727" class="text" fill="#666">MySQL</text>
+  
+  <!-- 模块6: 费用总结 -->
+  <rect x="30" y="780" width="355" height="95" rx="6" fill="white" stroke="#E0E0E0"/>
+  <text x="45" y="805" class="subtitle" fill="#333">💰 费用总结</text>
+  <text x="45" y="830" class="text" fill="#666">• ECS学生机：~10元/月</text>
+  <text x="45" y="850" class="text" fill="#666">• 域名：~55元/年（可选）</text>
+  <text x="45" y="870" class="text" fill="#666">• SSL证书：免费（每年20个）</text>
+  
+  <!-- 模块7: 排查清单 -->
+  <rect x="415" y="780" width="355" height="95" rx="6" fill="#FFF3E0" stroke="#FFB74D"/>
+  <text x="430" y="805" class="subtitle" fill="#E65100">🔍 网站打不开？检查清单</text>
+  <text x="430" y="830" class="text" fill="#666">① 安全组端口是否开放？</text>
+  <text x="430" y="850" class="text" fill="#666">② Nginx是否在运行？</text>
+  <text x="430" y="870" class="text" fill="#666">③ 后端是否在运行？pm2 list</text>
+  
+  <!-- 记忆口诀 -->
+  <rect x="30" y="890" width="740" height="85" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <text x="400" y="920" class="subtitle" fill="#2E7D32" text-anchor="middle" font-weight="bold">📝 记忆口诀</text>
+  <text x="400" y="950" class="text" fill="#333" text-anchor="middle">部署五步：买服务器 → 装环境 → 传代码 → 启动 → 配域名</text>
+  <text x="400" y="970" class="small" fill="#666" text-anchor="middle">记住：SSH连、安全组开、PM2守护、Nginx代理</text>
+</svg>

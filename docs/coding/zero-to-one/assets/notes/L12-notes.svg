@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 700; }
+      .text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; }
+      .code { font-family: 'SF Mono', 'Monaco', 'Consolas', monospace; }
+    </style>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="#FFFEF8"/>
+  
+  <!-- 标题区域 -->
+  <rect x="30" y="30" width="740" height="80" rx="8" fill="#FF6B35"/>
+  <text x="400" y="65" text-anchor="middle" class="title" fill="white" font-size="26">第12课 界面美化</text>
+  <text x="400" y="95" text-anchor="middle" class="text" fill="white" font-size="14">让产品更好看</text>
+  
+  <!-- 页码 -->
+  <text x="760" y="990" text-anchor="end" class="text" fill="#999" font-size="12">12/19</text>
+  
+  <!-- 核心观点 -->
+  <rect x="30" y="130" width="740" height="60" rx="8" fill="#FFF8E1"/>
+  <text x="50" y="155" class="text" fill="#FF8F00" font-size="12">💡 核心观点</text>
+  <text x="50" y="178" class="title" fill="#333" font-size="15">美化优先级：对齐间距 &gt; 字体大小 &gt; 颜色 &gt; 圆角阴影 &gt; 动画</text>
+  
+  <!-- 模块1: 美化优先级 -->
+  <rect x="30" y="210" width="740" height="110" rx="8" fill="#F5F5F5" stroke="#E0E0E0"/>
+  <text x="50" y="235" class="title" fill="#FF6B35" font-size="14">📊 美化优先级（装修类比）</text>
+  
+  <!-- 优先级条 -->
+  <rect x="50" y="255" width="145" height="30" rx="4" fill="#E53935"/>
+  <text x="122" y="275" text-anchor="middle" class="text" fill="white" font-size="11">1. 对齐间距</text>
+  <text x="122" y="305" text-anchor="middle" class="text" fill="#666" font-size="10">= 刷墙(基础)</text>
+  
+  <rect x="205" y="255" width="145" height="30" rx="4" fill="#FB8C00"/>
+  <text x="277" y="275" text-anchor="middle" class="text" fill="white" font-size="11">2. 字体大小</text>
+  <text x="277" y="305" text-anchor="middle" class="text" fill="#666" font-size="10">= 灯光(功能)</text>
+  
+  <rect x="360" y="255" width="145" height="30" rx="4" fill="#FDD835"/>
+  <text x="432" y="275" text-anchor="middle" class="text" fill="#333" font-size="11">3. 颜色</text>
+  <text x="432" y="305" text-anchor="middle" class="text" fill="#666" font-size="10">= 墙漆(氛围)</text>
+  
+  <rect x="515" y="255" width="120" height="30" rx="4" fill="#66BB6A"/>
+  <text x="575" y="275" text-anchor="middle" class="text" fill="white" font-size="11">4. 圆角阴影</text>
+  <text x="575" y="305" text-anchor="middle" class="text" fill="#666" font-size="10">= 踢脚线</text>
+  
+  <rect x="645" y="255" width="105" height="30" rx="4" fill="#42A5F5"/>
+  <text x="697" y="275" text-anchor="middle" class="text" fill="white" font-size="11">5. 动画</text>
+  <text x="697" y="305" text-anchor="middle" class="text" fill="#666" font-size="10">= 最后考虑</text>
+  
+  <!-- 模块2: 盒子模型 -->
+  <rect x="30" y="340" width="360" height="100" rx="8" fill="#E3F2FD" stroke="#90CAF9"/>
+  <text x="50" y="365" class="title" fill="#1976D2" font-size="14">📦 盒子模型</text>
+  
+  <!-- 盒子模型图 -->
+  <rect x="60" y="380" width="100" height="50" rx="2" fill="#E3F2FD" stroke="#90CAF9" stroke-width="2"/>
+  <rect x="70" y="390" width="80" height="30" rx="2" fill="#BBDEFB" stroke="#64B5F6"/>
+  <rect x="80" y="400" width="60" height="10" rx="2" fill="#90CAF9"/>
+  
+  <text x="180" y="395" class="text" fill="#1976D2" font-size="10">margin</text>
+  <text x="180" y="410" class="text" fill="#1976D2" font-size="10">border</text>
+  <text x="180" y="425" class="text" fill="#1976D2" font-size="10">padding</text>
+  <text x="260" y="410" class="text" fill="#1976D2" font-size="10">content</text>
+  
+  <rect x="410" y="340" width="360" height="100" rx="8" fill="#E8F5E9" stroke="#A5D6A7"/>
+  <text x="430" y="365" class="title" fill="#388E3C" font-size="14">🎨 CSS变量规范</text>
+  <text x="430" y="390" class="code" fill="#2E7D32" font-size="10">--primary: #3498db</text>
+  <text x="430" y="408" class="code" fill="#2E7D32" font-size="10">--spacing-md: 16px</text>
+  <text x="430" y="426" class="code" fill="#2E7D32" font-size="10">--radius: 8px</text>
+  
+  <!-- 模块3: Flex布局 -->
+  <rect x="30" y="460" width="360" height="110" rx="8" fill="#FCE4EC" stroke="#F48FB1"/>
+  <text x="50" y="485" class="title" fill="#C2185B" font-size="14">📐 Flex布局 - 排队神器</text>
+  <text x="50" y="505" class="text" fill="#555" font-size="11">让元素乖乖排队，一维布局</text>
+  
+  <rect x="50" y="520" width="320" height="40" rx="4" fill="#FFF0F5"/>
+  <text x="60" y="538" class="code" fill="#AD1457" font-size="10">display: flex;</text>
+  <text x="170" y="538" class="code" fill="#AD1457" font-size="10">justify-content: center;</text>
+  <text x="310" y="538" class="code" fill="#AD1457" font-size="10">gap: 16px;</text>
+  
+  <!-- 模块4: Grid布局 -->
+  <rect x="410" y="460" width="360" height="110" rx="8" fill="#EDE7F6" stroke="#B39DDB"/>
+  <text x="430" y="485" class="title" fill="#7B1FA2" font-size="14">🔲 Grid布局 - 网格系统</text>
+  <text x="430" y="505" class="text" fill="#555" font-size="11">多行多列，二维布局</text>
+  
+  <rect x="430" y="520" width="320" height="40" rx="4" fill="#F3E5F5"/>
+  <text x="440" y="538" class="code" fill="#6A1B9A" font-size="10">display: grid;</text>
+  <text x="560" y="538" class="code" fill="#6A1B9A" font-size="10">grid-template-columns: repeat(4, 1fr);</text>
+  
+  <!-- Flex vs Grid 对比 -->
+  <rect x="30" y="590" width="740" height="100" rx="8" fill="#F5F5F5" stroke="#E0E0E0"/>
+  <text x="50" y="615" class="title" fill="#333" font-size="13">⚔️ Flex vs Grid 对比</text>
+  
+  <rect x="50" y="630" width="350" height="50" rx="4" fill="#FCE4EC"/>
+  <text x="225" y="652" text-anchor="middle" class="title" fill="#C2185B" font-size="12">Flex</text>
+  <text x="225" y="672" text-anchor="middle" class="text" fill="#666" font-size="11">一维（一行/一列）| 导航栏、按钮组</text>
+  
+  <rect x="420" y="630" width="350" height="50" rx="4" fill="#EDE7F6"/>
+  <text x="595" y="652" text-anchor="middle" class="title" fill="#7B1FA2" font-size="12">Grid</text>
+  <text x="595" y="672" text-anchor="middle" class="text" fill="#666" font-size="11">二维（多行多列）| 卡片网格、表格</text>
+  
+  <!-- 模块5: 响应式三原则 -->
+  <rect x="30" y="710" width="740" height="100" rx="8" fill="#E8F5E9" stroke="#A5D6A7"/>
+  <text x="50" y="735" class="title" fill="#388E3C" font-size="14">📱 响应式三原则</text>
+  
+  <rect x="50" y="755" width="230" height="45" rx="4" fill="#C8E6C9"/>
+  <text x="165" y="775" text-anchor="middle" class="title" fill="#2E7D32" font-size="11">1. 不用固定宽度</text>
+  <text x="165" y="792" text-anchor="middle" class="code" fill="#1B5E20" font-size="10">max-width + width: 100%</text>
+  
+  <rect x="295" y="755" width="230" height="45" rx="4" fill="#C8E6C9"/>
+  <text x="410" y="775" text-anchor="middle" class="title" fill="#2E7D32" font-size="11">2. 媒体查询</text>
+  <text x="410" y="792" text-anchor="middle" class="code" fill="#1B5E20" font-size="10">@media (max-width: 768px)</text>
+  
+  <rect x="540" y="755" width="210" height="45" rx="4" fill="#C8E6C9"/>
+  <text x="645" y="775" text-anchor="middle" class="title" fill="#2E7D32" font-size="11">3. 图片自适应</text>
+  <text x="645" y="792" text-anchor="middle" class="code" fill="#1B5E20" font-size="10">max-width: 100%</text>
+  
+  <!-- 常见问题 -->
+  <rect x="30" y="830" width="740" height="70" rx="8" fill="#FFEBEE" stroke="#EF9A9A"/>
+  <text x="50" y="855" class="title" fill="#D32F2F" font-size="13">⚠️ 常见问题</text>
+  <text x="50" y="878" class="text" fill="#C62828" font-size="11">• 修改样式后没变化 → 强制刷新 Cmd+Shift+R</text>
+  <text x="400" y="878" class="text" fill="#C62828" font-size="11">• 手机样式不对 → 检查 viewport 标签</text>
+  
+  <!-- 记忆口诀 -->
+  <rect x="30" y="920" width="740" height="60" rx="8" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2"/>
+  <text x="400" y="945" text-anchor="middle" class="text" fill="#E65100" font-size="12">🎵 记忆口诀</text>
+  <text x="400" y="968" text-anchor="middle" class="title" fill="#BF360C" font-size="16">先对齐再好看，Flex排队Grid摆摊</text>
+</svg>

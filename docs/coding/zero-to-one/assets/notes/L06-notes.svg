@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <!-- 橙色渐变 - 标题区 -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#F7931E"/>
+    </linearGradient>
+    <!-- 黄色渐变 - 高亮区 -->
+    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF9E6"/>
+      <stop offset="100%" style="stop-color:#FFF3CD"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="#FAFAFA"/>
+  
+  <!-- ========== 标题区 ========== -->
+  <rect x="0" y="0" width="800" height="90" fill="url(#headerGrad)"/>
+  <text x="400" y="42" text-anchor="middle" font-family="Noto Sans SC, PingFang SC, sans-serif" font-size="26" font-weight="bold" fill="white">第6课：产品设计</text>
+  <text x="400" y="70" text-anchor="middle" font-family="Noto Sans SC, PingFang SC, sans-serif" font-size="14" fill="white" opacity="0.9">从"功能"到"页面"</text>
+  <text x="750" y="75" text-anchor="end" font-family="Noto Sans SC, sans-serif" font-size="11" fill="white" opacity="0.7">06 / 19</text>
+  
+  <!-- ========== 核心观点（黄色高亮） ========== -->
+  <rect x="30" y="110" width="740" height="55" rx="8" fill="url(#yellowGrad)" stroke="#F7931E" stroke-width="2"/>
+  <text x="50" y="138" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="#856404">💡 核心观点</text>
+  <text x="50" y="156" font-family="Noto Sans SC, sans-serif" font-size="13" fill="#856404">页面结构只关心"有什么"，不关心颜色字体</text>
+  
+  <!-- ========== 模块1: 核心问题 ========== -->
+  <rect x="30" y="180" width="740" height="105" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  <rect x="30" y="180" width="740" height="28" rx="8" fill="#2196F3"/>
+  <rect x="30" y="200" width="740" height="8" fill="#2196F3"/>
+  <text x="400" y="199" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="13" font-weight="bold" fill="white">❓ 设计页面前要问的三个问题</text>
+  
+  <g font-family="Noto Sans SC, sans-serif" font-size="12">
+    <text x="50" y="235" fill="#333">1️⃣ <tspan font-weight="bold">用户要完成什么任务？</tspan></text>
+    <text x="70" y="252" fill="#666">卖掉旧教材 / 买个二手耳机 / 看看有没有自行车</text>
+    
+    <text x="50" y="275" fill="#333">2️⃣ <tspan font-weight="bold">最重要的信息是什么？</tspan></text>
+    <text x="70" y="292" fill="#666">图片 → 价格 → 联系方式（这三样要最显眼）</text>
+  </g>
+  
+  <!-- ========== 模块2: 页面结构 ========== -->
+  <rect x="30" y="300" width="740" height="175" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  <rect x="30" y="300" width="740" height="28" rx="8" fill="#9C27B0"/>
+  <rect x="30" y="320" width="740" height="8" fill="#9C27B0"/>
+  <text x="400" y="319" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="13" font-weight="bold" fill="white">📄 四个核心页面结构</text>
+  
+  <!-- 首页 -->
+  <rect x="45" y="338" width="170" height="125" rx="6" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1"/>
+  <text x="130" y="358" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">🏠 首页</text>
+  <line x1="55" y1="365" x2="205" y2="365" stroke="#CE93D8" stroke-width="1"/>
+  <text x="55" y="383" font-family="monospace" font-size="10" fill="#333">├─ 搜索栏</text>
+  <text x="55" y="398" font-family="monospace" font-size="10" fill="#333">├─ 分类Tab</text>
+  <text x="55" y="413" font-family="monospace" font-size="10" fill="#333">├─ 物品列表</text>
+  <text x="55" y="428" font-family="monospace" font-size="10" fill="#333">└─ 底部导航</text>
+  <text x="130" y="455" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="9" fill="#666">任务：浏览找东西</text>
+  
+  <!-- 发布页 -->
+  <rect x="225" y="338" width="170" height="125" rx="6" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1"/>
+  <text x="310" y="358" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">➕ 发布页</text>
+  <line x1="235" y1="365" x2="385" y2="365" stroke="#CE93D8" stroke-width="1"/>
+  <text x="235" y="383" font-family="monospace" font-size="10" fill="#333">├─ 类型选择</text>
+  <text x="235" y="398" font-family="monospace" font-size="10" fill="#333">│ (出售/求购)</text>
+  <text x="235" y="413" font-family="monospace" font-size="10" fill="#333">├─ 表单填写</text>
+  <text x="235" y="428" font-family="monospace" font-size="10" fill="#333">└─ 图片上传</text>
+  <text x="310" y="455" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="9" fill="#666">任务：发布物品</text>
+  
+  <!-- 详情页 -->
+  <rect x="405" y="338" width="170" height="125" rx="6" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1"/>
+  <text x="490" y="358" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">📋 物品详情</text>
+  <line x1="415" y1="365" x2="565" y2="365" stroke="#CE93D8" stroke-width="1"/>
+  <text x="415" y="383" font-family="monospace" font-size="10" fill="#333">├─ 图片轮播</text>
+  <text x="415" y="398" font-family="monospace" font-size="10" fill="#333">├─ 标题价格描述</text>
+  <text x="415" y="413" font-family="monospace" font-size="10" fill="#333">├─ 卖家微信</text>
+  <text x="415" y="428" font-family="monospace" font-size="10" fill="#333">└─ 收藏按钮</text>
+  <text x="490" y="455" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="9" fill="#666">任务：决定买不买</text>
+  
+  <!-- 我的页面 -->
+  <rect x="585" y="338" width="170" height="125" rx="6" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1"/>
+  <text x="670" y="358" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#6A1B9A">👤 我的</text>
+  <line x1="595" y1="365" x2="745" y2="365" stroke="#CE93D8" stroke-width="1"/>
+  <text x="595" y="383" font-family="monospace" font-size="10" fill="#333">├─ 认证状态</text>
+  <text x="595" y="398" font-family="monospace" font-size="10" fill="#333">├─ 我的发布</text>
+  <text x="595" y="413" font-family="monospace" font-size="10" fill="#333">├─ 我的收藏</text>
+  <text x="595" y="428" font-family="monospace" font-size="10" fill="#333">└─ 设置</text>
+  <text x="670" y="455" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="9" fill="#666">任务：管理自己信息</text>
+  
+  <!-- ========== 模块3: 信息架构 ========== -->
+  <rect x="30" y="490" width="740" height="110" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  <rect x="30" y="490" width="740" height="28" rx="8" fill="#4CAF50"/>
+  <rect x="30" y="510" width="740" height="8" fill="#4CAF50"/>
+  <text x="400" y="509" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="13" font-weight="bold" fill="white">🗂️ 信息架构 = 用户怎么找到东西</text>
+  
+  <text x="50" y="545" font-family="Noto Sans SC, sans-serif" font-size="11" fill="#333">分类逻辑：</text>
+  
+  <!-- 架构树 -->
+  <g font-family="monospace" font-size="10" fill="#333">
+    <text x="130" y="545">一级分类</text>
+    <text x="130" y="560">├── 出售（我要卖）</text>
+    <text x="160" y="575">├── 书籍</text>
+    <text x="160" y="590">├── 数码</text>
+    
+    <text x="380" y="560">└── 求购（我要买）</text>
+    <text x="410" y="575">├── 生活用品</text>
+    <text x="410" y="590">└── 其他</text>
+  </g>
+  
+  <rect x="560" y="535" width="195" height="55" rx="6" fill="#E8F5E9" stroke="#4CAF50"/>
+  <text x="657" y="555" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="10" fill="#2E7D32">💡 好的信息架构</text>
+  <text x="657" y="572" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="9" fill="#388E3C">让用户"不用想就知道</text>
+  <text x="657" y="585" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="9" fill="#388E3C">去哪找"</text>
+  
+  <!-- ========== 模块4: 用户体验四要素 ========== -->
+  <rect x="30" y="615" width="740" height="130" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  <rect x="30" y="615" width="740" height="28" rx="8" fill="#FF6B35"/>
+  <rect x="30" y="635" width="740" height="8" fill="#FF6B35"/>
+  <text x="400" y="634" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="13" font-weight="bold" fill="white">✨ 好的用户体验四要素（电梯按钮类比）</text>
+  
+  <!-- 四要素卡片 -->
+  <g font-family="Noto Sans SC, sans-serif">
+    <!-- 可见性 -->
+    <rect x="45" y="655" width="170" height="75" rx="6" fill="#FFF3E0" stroke="#FF9800"/>
+    <text x="130" y="675" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">👁️ 可见性</text>
+    <text x="130" y="695" text-anchor="middle" font-size="10" fill="#333">功能在显眼位置</text>
+    <text x="130" y="710" text-anchor="middle" font-size="9" fill="#666">不用找</text>
+    <text x="130" y="725" text-anchor="middle" font-size="9" fill="#999">电梯按钮一进门就看到</text>
+    
+    <!-- 反馈性 -->
+    <rect x="225" y="655" width="170" height="75" rx="6" fill="#E3F2FD" stroke="#2196F3"/>
+    <text x="310" y="675" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565C0">🔔 反馈性</text>
+    <text x="310" y="695" text-anchor="middle" font-size="10" fill="#333">点了按钮有反应</text>
+    <text x="310" y="710" text-anchor="middle" font-size="9" fill="#666">知道按到了</text>
+    <text x="310" y="725" text-anchor="middle" font-size="9" fill="#999">按下后灯会亮</text>
+    
+    <!-- 容错性 -->
+    <rect x="405" y="655" width="170" height="75" rx="6" fill="#FCE4EC" stroke="#E91E63"/>
+    <text x="490" y="675" text-anchor="middle" font-size="12" font-weight="bold" fill="#AD1457">↩️ 容错性</text>
+    <text x="490" y="695" text-anchor="middle" font-size="10" fill="#333">点错了能撤销</text>
+    <text x="490" y="710" text-anchor="middle" font-size="9" fill="#666">可以重来</text>
+    <text x="490" y="725" text-anchor="middle" font-size="9" fill="#999">按错了能取消</text>
+    
+    <!-- 效率 -->
+    <rect x="585" y="655" width="170" height="75" rx="6" fill="#E8F5E9" stroke="#4CAF50"/>
+    <text x="670" y="675" text-anchor="middle" font-size="12" font-weight="bold" fill="#2E7D32">⚡ 效率</text>
+    <text x="670" y="695" text-anchor="middle" font-size="10" fill="#333">常用操作步骤少</text>
+    <text x="670" y="710" text-anchor="middle" font-size="9" fill="#666">不用等太久</text>
+    <text x="670" y="725" text-anchor="middle" font-size="9" fill="#999">电梯来得快</text>
+  </g>
+  
+  <!-- ========== 模块5: 页面草图示例 ========== -->
+  <rect x="30" y="760" width="740" height="140" rx="8" fill="#FAFAFA" stroke="#9E9E9E" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="400" y="785" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="13" font-weight="bold" fill="#616161">✏️ 草图示例：首页布局（用纸笔画最快）</text>
+  
+  <!-- ASCII 风格草图 -->
+  <g font-family="monospace" font-size="10" fill="#424242">
+    <rect x="280" y="800" width="240" height="85" rx="4" fill="white" stroke="#BDBDBD"/>
+    <line x1="280" y1="820" x2="520" y2="820" stroke="#BDBDBD"/>
+    <text x="400" y="814" text-anchor="middle" fill="#757575">🔍 搜索栏</text>
+    
+    <line x1="280" y1="840" x2="520" y2="840" stroke="#BDBDBD"/>
+    <text x="400" y="834" text-anchor="middle" fill="#757575">分类: 书 数码 生活</text>
+    
+    <!-- 物品卡片 -->
+    <rect x="290" y="848" width="100" height="30" rx="2" fill="#F5F5F5" stroke="#BDBDBD"/>
+    <text x="340" y="865" text-anchor="middle" font-size="8" fill="#757575">📷 物品卡片</text>
+    
+    <rect x="410" y="848" width="100" height="30" rx="2" fill="#F5F5F5" stroke="#BDBDBD"/>
+    <text x="460" y="865" text-anchor="middle" font-size="8" fill="#757575">📷 物品卡片</text>
+    
+    <!-- 底部导航 -->
+    <line x1="280" y1="870" x2="520" y2="870" stroke="#BDBDBD"/>
+    <text x="400" y="882" text-anchor="middle" fill="#FF6B35" font-weight="bold">首页 | 发布 | 我的</text>
+  </g>
+  
+  <text x="180" y="890" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="9" fill="#757575">💡 别一上来就用设计软件</text>
+  <text x="620" y="890" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="9" fill="#757575">✅ 拿纸笔画，改起来最快</text>
+  
+  <!-- ========== 记忆口诀 ========== -->
+  <rect x="30" y="920" width="740" height="60" rx="8" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2"/>
+  <text x="400" y="948" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="15" font-weight="bold" fill="#283593">📌 记忆口诀</text>
+  <text x="400" y="970" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="13" fill="#3F51B5">好的UX让用户感觉不到它的存在</text>
+  
+  <!-- 装饰元素 -->
+  <circle cx="60" cy="950" r="3" fill="#7986CB"/>
+  <circle cx="740" cy="950" r="3" fill="#7986CB"/>
+</svg>

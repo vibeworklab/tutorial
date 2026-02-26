@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#42b983;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#35495e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="400" fill="url(#bgGrad)"/>
+  
+  <circle cx="100" cy="100" r="150" fill="white" opacity="0.05"/>
+  <circle cx="700" cy="300" r="200" fill="white" opacity="0.05"/>
+  
+  <g opacity="0.1" stroke="white" stroke-width="1" fill="none">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+  </g>
+  
+  <g transform="translate(150, 150)">
+    <rect x="0" y="0" width="120" height="100" rx="8" fill="white" opacity="0.9"/>
+    <rect x="10" y="15" width="60" height="8" rx="4" fill="#42b983"/>
+    <rect x="10" y="30" width="80" height="6" rx="3" fill="#e0e0e0"/>
+    <rect x="10" y="42" width="50" height="6" rx="3" fill="#e0e0e0"/>
+    <rect x="10" y="54" width="70" height="6" rx="3" fill="#e0e0e0"/>
+    <rect x="10" y="70" width="40" height="20" rx="4" fill="#42b983"/>
+    <rect x="60" y="70" width="40" height="20" rx="4" fill="#35495e"/>
+  </g>
+  
+  <g transform="translate(350, 120)">
+    <circle cx="50" cy="50" r="45" fill="white" opacity="0.9"/>
+    <text x="50" y="60" font-size="40" text-anchor="middle">🤖</text>
+  </g>
+  
+  <g transform="translate(500, 150)">
+    <rect x="0" y="0" width="120" height="100" rx="8" fill="white" opacity="0.9"/>
+    <rect x="10" y="15" width="60" height="8" rx="4" fill="#35495e"/>
+    <rect x="10" y="30" width="80" height="6" rx="3" fill="#e0e0e0"/>
+    <rect x="10" y="42" width="50" height="6" rx="3" fill="#e0e0e0"/>
+    <rect x="10" y="54" width="70" height="6" rx="3" fill="#e0e0e0"/>
+    <rect x="10" y="70" width="100" height="20" rx="4" fill="#42b983"/>
+    <text x="60" y="84" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Deploy</text>
+  </g>
+  
+  <g stroke="white" stroke-width="2" stroke-dasharray="5,5" opacity="0.5">
+    <line x1="270" y1="200" x2="350" y2="170"/>
+    <line x1="450" y1="170" x2="500" y2="200"/>
+  </g>
+  
+  <text x="400" y="350" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle" opacity="0.8">AI 协作 · 从想法到上线</text>
+</svg>

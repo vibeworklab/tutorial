@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#F7931E"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="#FAFAFA"/>
+  
+  <!-- 标题区 -->
+  <rect x="0" y="0" width="800" height="90" fill="url(#headerGrad)"/>
+  <text x="400" y="45" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" fill="white">第8课 用户认证</text>
+  <text x="400" y="72" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" fill="white">让用户有身份 · 注册登录功能</text>
+  
+  <!-- 核心观点 -->
+  <rect x="30" y="110" width="740" height="55" rx="8" fill="#FFF3CD" stroke="#F7931E" stroke-width="2"/>
+  <text x="50" y="138" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="#856404">💡 核心观点</text>
+  <text x="50" y="158" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="13" fill="#856404">Token就是房卡——登录成功给你一张，以后每次请求刷一下</text>
+  
+  <!-- 注册登录流程 -->
+  <rect x="30" y="185" width="740" height="130" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+  <rect x="30" y="185" width="740" height="28" rx="8" fill="#2196F3"/>
+  <text x="400" y="204" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">📝 注册登录流程</text>
+  
+  <!-- 注册流程 -->
+  <text x="50" y="238" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#1565C0">注册：</text>
+  <g transform="translate(80, 224)">
+    <rect x="0" y="0" width="70" height="26" rx="4" fill="#BBDEFB"/>
+    <text x="35" y="17" text-anchor="middle" font-size="11" fill="#1565C0">填写信息</text>
+  </g>
+  <text x="158" y="240" font-size="14" fill="#2196F3">→</text>
+  <g transform="translate(175, 224)">
+    <rect x="0" y="0" width="70" height="26" rx="4" fill="#BBDEFB"/>
+    <text x="35" y="17" text-anchor="middle" font-size="11" fill="#1565C0">检查重复</text>
+  </g>
+  <text x="253" y="240" font-size="14" fill="#2196F3">→</text>
+  <g transform="translate(270, 224)">
+    <rect x="0" y="0" width="70" height="26" rx="4" fill="#BBDEFB"/>
+    <text x="35" y="17" text-anchor="middle" font-size="11" fill="#1565C0">密码加密</text>
+  </g>
+  <text x="348" y="240" font-size="14" fill="#2196F3">→</text>
+  <g transform="translate(365, 224)">
+    <rect x="0" y="0" width="70" height="26" rx="4" fill="#90CAF9"/>
+    <text x="35" y="17" text-anchor="middle" font-size="11" fill="#0D47A1">存数据库</text>
+  </g>
+  
+  <!-- 登录流程 -->
+  <text x="50" y="278" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#1565C0">登录：</text>
+  <g transform="translate(80, 264)">
+    <rect x="0" y="0" width="70" height="26" rx="4" fill="#BBDEFB"/>
+    <text x="35" y="17" text-anchor="middle" font-size="11" fill="#1565C0">手机+密码</text>
+  </g>
+  <text x="158" y="280" font-size="14" fill="#2196F3">→</text>
+  <g transform="translate(175, 264)">
+    <rect x="0" y="0" width="70" height="26" rx="4" fill="#BBDEFB"/>
+    <text x="35" y="17" text-anchor="middle" font-size="11" fill="#1565C0">查用户</text>
+  </g>
+  <text x="253" y="280" font-size="14" fill="#2196F3">→</text>
+  <g transform="translate(270, 264)">
+    <rect x="0" y="0" width="70" height="26" rx="4" fill="#BBDEFB"/>
+    <text x="35" y="17" text-anchor="middle" font-size="11" fill="#1565C0">验证密码</text>
+  </g>
+  <text x="348" y="280" font-size="14" fill="#2196F3">→</text>
+  <g transform="translate(365, 264)">
+    <rect x="0" y="0" width="70" height="26" rx="4" fill="#90CAF9"/>
+    <text x="35" y="17" text-anchor="middle" font-size="11" fill="#0D47A1">返回Token</text>
+  </g>
+  
+  <!-- API说明 -->
+  <text x="500" y="250" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#666">POST /api/auth/register</text>
+  <text x="500" y="278" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#666">POST /api/auth/login</text>
+  
+  <!-- 密码加密 -->
+  <rect x="30" y="330" width="355" height="145" rx="8" fill="#FFEBEE" stroke="#EF5350" stroke-width="2"/>
+  <rect x="30" y="330" width="355" height="28" rx="8" fill="#EF5350"/>
+  <text x="207" y="349" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">🔥 密码加密——把纸烧成灰</text>
+  
+  <text x="50" y="382" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#C62828">❌ 明文存储：数据库泄露就完了</text>
+  <text x="50" y="405" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#C62828">❌ 可逆加密：密钥泄露也能还原</text>
+  
+  <line x1="50" y1="420" x2="370" y2="420" stroke="#FFCDD2" stroke-width="1"/>
+  
+  <text x="50" y="442" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">✅ bcrypt 哈希加密（不可逆）</text>
+  <text x="50" y="462" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#666">原理：明文 → 哈希值 → 无法还原</text>
+  
+  <!-- Token作用 -->
+  <rect x="415" y="330" width="355" height="145" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <rect x="415" y="330" width="355" height="28" rx="8" fill="#4CAF50"/>
+  <text x="592" y="349" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">🔑 Token = 酒店房卡</text>
+  
+  <text x="435" y="382" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#2E7D32">🏨 入住酒店：前台给你房卡</text>
+  <text x="435" y="405" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#2E7D32">🚪 每次进房间：刷房卡验证</text>
+  <text x="435" y="428" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#2E7D32">⏰ 房卡过期：重新去前台</text>
+  
+  <line x1="435" y1="443" x2="750" y2="443" stroke="#A5D6A7" stroke-width="1"/>
+  
+  <text x="435" y="465" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#666">登录→服务器返回Token→保存到localStorage</text>
+  
+  <!-- 用户表结构 -->
+  <rect x="30" y="490" width="355" height="165" rx="8" fill="white" stroke="#9E9E9E" stroke-width="1"/>
+  <rect x="30" y="490" width="355" height="28" rx="8" fill="#607D8B"/>
+  <text x="207" y="509" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">📊 User 用户表结构</text>
+  
+  <g font-family="Consolas, Monaco, monospace" font-size="11">
+    <text x="50" y="540" fill="#1565C0">id</text><text x="100" y="540" fill="#666">INTEGER</text><text x="180" y="540" fill="#999">主键自增</text>
+    <text x="50" y="560" fill="#1565C0">phone</text><text x="100" y="560" fill="#666">STRING(11)</text><text x="180" y="560" fill="#999">手机号，唯一</text>
+    <text x="50" y="580" fill="#1565C0">password</text><text x="115" y="580" fill="#666">STRING</text><text x="180" y="580" fill="#EF5350">加密后的"灰"</text>
+    <text x="50" y="600" fill="#1565C0">nickname</text><text x="115" y="600" fill="#666">STRING</text><text x="180" y="600" fill="#999">昵称</text>
+    <text x="50" y="620" fill="#1565C0">studentId</text><text x="115" y="620" fill="#666">STRING</text><text x="180" y="620" fill="#999">学号(实名)</text>
+    <text x="50" y="640" fill="#1565C0">avatar</text><text x="100" y="640" fill="#666">STRING</text><text x="180" y="640" fill="#999">头像URL</text>
+  </g>
+  
+  <!-- 中间件概念 -->
+  <rect x="415" y="490" width="355" height="165" rx="8" fill="#FFF8E1" stroke="#FFA000" stroke-width="2"/>
+  <rect x="415" y="490" width="355" height="28" rx="8" fill="#FFA000"/>
+  <text x="592" y="509" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">🚧 中间件 = 门卫</text>
+  
+  <text x="435" y="540" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#666">每个需要登录的接口，先过门卫：</text>
+  
+  <g transform="translate(435, 555)">
+    <rect x="0" y="0" width="60" height="30" rx="4" fill="#BBDEFB"/>
+    <text x="30" y="20" text-anchor="middle" font-size="10" fill="#1565C0">请求进来</text>
+  </g>
+  <text x="503" y="575" font-size="14" fill="#FFA000">→</text>
+  <g transform="translate(520, 555)">
+    <rect x="0" y="0" width="70" height="30" rx="4" fill="#FFE0B2"/>
+    <text x="35" y="12" text-anchor="middle" font-size="10" fill="#E65100">检查Token</text>
+    <text x="35" y="24" text-anchor="middle" font-size="10" fill="#E65100">是否有效</text>
+  </g>
+  <text x="598" y="575" font-size="14" fill="#4CAF50">✓</text>
+  <g transform="translate(615, 555)">
+    <rect x="0" y="0" width="60" height="30" rx="4" fill="#C8E6C9"/>
+    <text x="30" y="12" text-anchor="middle" font-size="10" fill="#2E7D32">有效：</text>
+    <text x="30" y="24" text-anchor="middle" font-size="10" fill="#2E7D32">放行next()</text>
+  </g>
+  <text x="683" y="575" font-size="14" fill="#EF5350">✗</text>
+  <g transform="translate(700, 555)">
+    <rect x="0" y="0" width="60" height="30" rx="4" fill="#FFCDD2"/>
+    <text x="30" y="12" text-anchor="middle" font-size="10" fill="#C62828">无效：</text>
+    <text x="30" y="24" text-anchor="middle" font-size="10" fill="#C62828">拦下401</text>
+  </g>
+  
+  <text x="435" y="620" font-family="Consolas, Monaco, monospace" font-size="10" fill="#666">const authenticate = (req, res, next) => {</text>
+  <text x="445" y="635" font-family="Consolas, Monaco, monospace" font-size="10" fill="#666">  // 验证Token → 有效放行</text>
+  <text x="445" y="650" font-family="Consolas, Monaco, monospace" font-size="10" fill="#666">  next() // 或 return 401</text>
+  <text x="435" y="665" font-family="Consolas, Monaco, monospace" font-size="10" fill="#666">}</text>
+  
+  <!-- 关键代码 -->
+  <rect x="30" y="670" width="740" height="95" rx="8" fill="#263238"/>
+  <text x="50" y="695" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#80CBC4">⚡ 关键代码片段</text>
+  <g font-family="Consolas, Monaco, monospace" font-size="10">
+    <text x="50" y="715" fill="#A5D6A7">// 密码加密</text>
+    <text x="50" y="730" fill="#CE93D8">const hashedPassword = await bcrypt.hash(password, 10);</text>
+    <text x="420" y="715" fill="#A5D6A">// 生成Token</text>
+    <text x="420" y="730" fill="#CE93D8">const token = jwt.sign({ userId }, secret, { expiresIn: '7d' });</text>
+    <text x="50" y="755" fill="#A5D6A">// 验证Token</text>
+    <text x="50" y="770" fill="#CE93D8">const decoded = jwt.verify(token, secret);</text>
+  </g>
+  
+  <!-- 常见问题 -->
+  <rect x="30" y="780" width="740" height="120" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  <rect x="30" y="780" width="740" height="26" rx="8" fill="#78909C"/>
+  <text x="400" y="798" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="13" font-weight="bold" fill="white">❓ 常见问题</text>
+  
+  <text x="50" y="828" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" font-weight="bold" fill="#1565C0">Q: 为什么登录失败不告诉我是"密码错误"而是"手机号或密码错误"？</text>
+  <text x="50" y="848" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#666">A: 安全考虑。如果提示"手机号不存在"，黑客就知道可以换个号试。统一提示不给额外信息。</text>
+  
+  <text x="50" y="875" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" font-weight="bold" fill="#1565C0">Q: Token存在localStorage有什么风险？</text>
+  <text x="50" y="895" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#666">A: 有XSS攻击风险。学习项目够用，生产环境可用httpOnly cookie更安全。</text>
+  
+  <!-- 记忆口诀 -->
+  <rect x="30" y="920" width="740" height="60" rx="8" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2"/>
+  <text x="400" y="948" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="16" font-weight="bold" fill="#283593">📌 记忆口诀</text>
+  <text x="400" y="970" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" fill="#3F51B5">密码存"灰"不存"纸"，Token就是电子房卡</text>
+  
+  <!-- 页码 -->
+  <text x="770" y="990" text-anchor="end" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#999">08 / 19</text>
+</svg>

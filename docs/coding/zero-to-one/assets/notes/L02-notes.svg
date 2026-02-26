@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <!-- 橙色渐变 -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#F7931E"/>
+    </linearGradient>
+    <!-- 阴影 -->
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <!-- 箭头标记 -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF6B35"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="#FAFAFA"/>
+  
+  <!-- 标题区 -->
+  <rect x="0" y="0" width="800" height="90" fill="url(#headerGrad)"/>
+  <text x="400" y="42" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="28" font-weight="bold" fill="white">第2课：工具准备</text>
+  <text x="400" y="70" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)">🔧 安装 opencode，开启 AI 协作之旅</text>
+  <text x="750" y="80" text-anchor="end" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">02 / 19</text>
+  
+  <!-- 核心观点框 -->
+  <rect x="30" y="110" width="740" height="55" rx="8" fill="#FFF3CD" stroke="#F7931E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="50" y="135" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="13" font-weight="bold" fill="#856404">💡 核心观点</text>
+  <text x="50" y="155" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#856404">opencode 能直接操作你的项目文件，不需要复制粘贴。这才是真正的"协作"。</text>
+  
+  <!-- 模块1: 工具对比 -->
+  <text x="30" y="195" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="#333">📊 工具对比：网页版 AI vs opencode</text>
+  
+  <!-- 左边：网页版AI（红色/负面） -->
+  <rect x="30" y="210" width="360" height="85" rx="8" fill="#FFEBEE" stroke="#EF5350" stroke-width="1.5"/>
+  <rect x="30" y="210" width="360" height="24" rx="8" fill="#EF5350"/>
+  <rect x="30" y="226" width="360" height="8" fill="#EF5350"/>
+  <text x="210" y="228" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="13" font-weight="bold" fill="white">❌ 网页版 AI</text>
+  <text x="45" y="250" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#C62828">你: 帮我写代码</text>
+  <text x="45" y="264" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#C62828">AI: 给你代码 → 你复制粘贴</text>
+  <text x="45" y="278" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#C62828">你: 报错了 → 复制错误给AI → 循环...</text>
+  
+  <!-- 右边：opencode（绿色/正面） -->
+  <rect x="410" y="210" width="360" height="85" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <rect x="410" y="210" width="360" height="24" rx="8" fill="#4CAF50"/>
+  <rect x="410" y="226" width="360" height="8" fill="#4CAF50"/>
+  <text x="590" y="228" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="13" font-weight="bold" fill="white">✅ opencode</text>
+  <text x="425" y="250" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#2E7D32">你: 帮我写代码</text>
+  <text x="425" y="264" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#2E7D32">AI: 直接创建文件、写入代码 ✓</text>
+  <text x="425" y="278" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#2E7D32">你: 报错了 → AI自动修复 → 搞定！</text>
+  
+  <!-- 对比箭头 -->
+  <text x="395" y="258" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="16" fill="#FF6B35">VS</text>
+  
+  <!-- 模块2: 安装步骤 -->
+  <text x="30" y="320" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="#333">📦 安装步骤（三步走）</text>
+  
+  <!-- 步骤流程 -->
+  <g transform="translate(30, 335)">
+    <!-- Step 1 -->
+    <rect x="0" y="0" width="230" height="65" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5"/>
+    <circle cx="20" cy="18" r="12" fill="#2196F3"/>
+    <text x="20" y="22" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="white">1</text>
+    <text x="40" y="22" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#1565C0">安装 Node.js</text>
+    <text x="15" y="40" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#666">• 访问 nodejs.org</text>
+    <text x="15" y="54" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#666">• 下载 LTS 版本（v18+）</text>
+    
+    <!-- 箭头 -->
+    <line x1="235" y1="32" x2="260" y2="32" stroke="#FF6B35" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 2 -->
+    <rect x="265" y="0" width="230" height="65" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+    <circle cx="285" cy="18" r="12" fill="#4CAF50"/>
+    <text x="285" y="22" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="white">2</text>
+    <text x="305" y="22" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">配置镜像</text>
+    <text x="280" y="40" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#666">• npm config set registry</text>
+    <text x="280" y="54" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#666">• npmmirror.com（国内）</text>
+    
+    <!-- 箭头 -->
+    <line x1="500" y1="32" x2="525" y2="32" stroke="#FF6B35" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 3 -->
+    <rect x="530" y="0" width="230" height="65" rx="8" fill="#FFF3CD" stroke="#F7931E" stroke-width="1.5"/>
+    <circle cx="550" cy="18" r="12" fill="#F7931E"/>
+    <text x="550" y="22" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="white">3</text>
+    <text x="570" y="22" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#E65100">安装 opencode</text>
+    <text x="545" y="40" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#666">• npm install -g</text>
+    <text x="545" y="54" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#666">  opencode-ai</text>
+  </g>
+  
+  <!-- 验证命令 -->
+  <rect x="30" y="410" width="740" height="26" rx="4" fill="#263238"/>
+  <text x="45" y="428" font-family="Consolas, Monaco, monospace" font-size="11" fill="#4CAF50">$ node -v        $ npm -v        $ opencode --version</text>
+  
+  <!-- 模块3: 终端操作 -->
+  <text x="30" y="460" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="#333">💻 如何打开终端</text>
+  
+  <!-- Windows -->
+  <rect x="30" y="475" width="360" height="70" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5"/>
+  <rect x="30" y="475" width="360" height="22" rx="8" fill="#2196F3"/>
+  <rect x="30" y="489" width="360" height="8" fill="#2196F3"/>
+  <text x="210" y="492" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="white">🪟 Windows</text>
+  <text x="45" y="518" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#333">方法1：按 Win 键 → 输入 cmd</text>
+  <text x="45" y="535" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#333">方法2：Win + R → 输入 cmd → 回车</text>
+  
+  <!-- Mac -->
+  <rect x="410" y="475" width="360" height="70" rx="8" fill="#E8EAF6" stroke="#3F51B5" stroke-width="1.5"/>
+  <rect x="410" y="475" width="360" height="22" rx="8" fill="#3F51B5"/>
+  <rect x="410" y="489" width="360" height="8" fill="#3F51B5"/>
+  <text x="590" y="492" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="white">🍎 Mac</text>
+  <text x="425" y="518" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#333">方法1：Command + 空格 → 输入"终端"</text>
+  <text x="425" y="535" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#333">方法2：Finder → 应用程序 → 实用工具</text>
+  
+  <!-- 模块4: AI服务配置 -->
+  <text x="30" y="570" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="#333">🤖 AI 服务配置（国内推荐）</text>
+  
+  <g transform="translate(30, 585)">
+    <!-- 智谱AI -->
+    <rect x="0" y="0" width="360" height="50" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+    <text x="180" y="20" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="13" font-weight="bold" fill="#2E7D32">智谱 AI（推荐）</text>
+    <text x="15" y="38" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#666">• chatglm.cn • 国产、速度快、免费额度</text>
+    
+    <!-- DeepSeek -->
+    <rect x="380" y="0" width="360" height="50" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5"/>
+    <text x="560" y="20" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="13" font-weight="bold" fill="#1565C0">DeepSeek</text>
+    <text x="395" y="38" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#666">• platform.deepseek.com • 便宜、代码强</text>
+  </g>
+  
+  <!-- 配置步骤 -->
+  <rect x="30" y="645" width="740" height="28" rx="4" fill="#F5F5F5" stroke="#E0E0E0"/>
+  <text x="45" y="664" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#666">配置步骤：注册账号 → 获取 API Key → 在 opencode 中运行 /connect → 选择服务 → 粘贴 Key</text>
+  
+  <!-- 模块5: 使用流程 -->
+  <text x="30" y="700" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="#333">🔄 使用流程（协作循环）</text>
+  
+  <g transform="translate(30, 715)">
+    <!-- 流程圆圈 -->
+    <!-- 1. 描述需求 -->
+    <circle cx="100" cy="40" r="35" fill="#FF6B35" stroke="#E65100" stroke-width="2"/>
+    <text x="100" y="36" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" font-weight="bold" fill="white">描述</text>
+    <text x="100" y="50" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" font-weight="bold" fill="white">需求</text>
+    
+    <!-- 箭头 1→2 -->
+    <path d="M137 40 L188 40" stroke="#FF6B35" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- 2. AI执行 -->
+    <circle cx="230" cy="40" r="35" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+    <text x="230" y="36" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" font-weight="bold" fill="white">AI</text>
+    <text x="230" y="50" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" font-weight="bold" fill="white">执行</text>
+    
+    <!-- 箭头 2→3 -->
+    <path d="M267 40 L318 40" stroke="#4CAF50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- 3. 验收结果 -->
+    <circle cx="360" cy="40" r="35" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+    <text x="360" y="36" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" font-weight="bold" fill="white">验收</text>
+    <text x="360" y="50" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" font-weight="bold" fill="white">结果</text>
+    
+    <!-- 箭头 3→4 -->
+    <path d="M397 40 L448 40" stroke="#2196F3" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- 4. 提出修改 -->
+    <circle cx="490" cy="40" r="35" fill="#9C27B0" stroke="#6A1B9A" stroke-width="2"/>
+    <text x="490" y="36" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" font-weight="bold" fill="white">提出</text>
+    <text x="490" y="50" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" font-weight="bold" fill="white">修改</text>
+    
+    <!-- 循环箭头 -->
+    <path d="M525 40 Q580 40 580 80 Q580 115 360 115 Q100 115 100 78" stroke="#FF6B35" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+    
+    <!-- 角色标注 -->
+    <text x="100" y="92" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#FF6B35">👤 人类</text>
+    <text x="230" y="92" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#4CAF50">🤖 AI</text>
+    <text x="360" y="92" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#2196F3">👤 人类</text>
+    <text x="490" y="92" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#9C27B0">👤 人类</text>
+  </g>
+  
+  <!-- 模块6: 能力边界 -->
+  <text x="30" y="860" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="#333">⚡ opencode 能做什么 / 不能做什么</text>
+  
+  <g transform="translate(30, 875)">
+    <!-- 能做的 -->
+    <rect x="0" y="0" width="360" height="36" rx="6" fill="#E8F5E9" stroke="#4CAF50"/>
+    <text x="15" y="14" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#2E7D32">✅ 读写文件、执行命令、搜索代码</text>
+    <text x="15" y="28" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#2E7D32">✅ 解释代码、写测试、修 Bug</text>
+    
+    <!-- 不能做的 -->
+    <rect x="380" y="0" width="360" height="36" rx="6" fill="#FFEBEE" stroke="#EF5350"/>
+    <text x="395" y="14" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#C62828">❌ 看不到你的屏幕（你描述问题）</text>
+    <text x="395" y="28" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#C62828">❌ 不能保证100%正确（你要验收）</text>
+  </g>
+  
+  <!-- 记忆口诀 -->
+  <rect x="30" y="930" width="740" height="55" rx="8" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2"/>
+  <text x="400" y="952" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="13" font-weight="bold" fill="#283593">📌 记忆口诀</text>
+  <text x="400" y="975" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="#3F51B5">网页版 AI 只能"说"，opencode 能"做"</text>
+  
+</svg>

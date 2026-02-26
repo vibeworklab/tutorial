@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#F7931E"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="#FAFAFA"/>
+  
+  <!-- 标题区 -->
+  <rect x="0" y="0" width="800" height="90" fill="url(#headerGrad)"/>
+  <text x="400" y="45" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="26" font-weight="bold" fill="white">第9课 发布物品</text>
+  <text x="400" y="72" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" fill="white">核心功能上线 · 图片上传与表单</text>
+  
+  <!-- 核心观点 -->
+  <rect x="30" y="110" width="740" height="55" rx="8" fill="#FFF3CD" stroke="#F7931E" stroke-width="2"/>
+  <text x="50" y="138" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="#856404">💡 核心观点</text>
+  <text x="50" y="158" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="13" fill="#856404">图片上传是两步：先上传获取URL，再关联到物品</text>
+  
+  <!-- 物品信息 -->
+  <rect x="30" y="185" width="355" height="155" rx="8" fill="white" stroke="#9E9E9E" stroke-width="1"/>
+  <rect x="30" y="185" width="355" height="28" rx="8" fill="#607D8B"/>
+  <text x="207" y="204" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">📦 物品信息字段</text>
+  
+  <g font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12">
+    <text x="50" y="238" fill="#333">🏷️ title</text><text x="150" y="238" fill="#4CAF50">必填</text><text x="200" y="238" fill="#666">物品标题</text>
+    <text x="50" y="258" fill="#333">💰 price</text><text x="150" y="258" fill="#4CAF50">必填</text><text x="200" y="258" fill="#666">出售价格</text>
+    <text x="50" y="278" fill="#333">📝 description</text><text x="150" y="278" fill="#999">选填</text><text x="200" y="278" fill="#666">详细描述</text>
+    <text x="50" y="298" fill="#333">🖼️ images</text><text x="150" y="298" fill="#999">选填</text><text x="200" y="298" fill="#666">图片URL数组</text>
+    <text x="50" y="318" fill="#333">📍 location</text><text x="150" y="318" fill="#999">选填</text><text x="200" y="318" fill="#666">交易地点</text>
+  </g>
+  
+  <!-- 图片上传流程 -->
+  <rect x="415" y="185" width="355" height="155" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+  <rect x="415" y="185" width="355" height="28" rx="8" fill="#2196F3"/>
+  <text x="592" y="204" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">📸 图片上传流程（两步走）</text>
+  
+  <g transform="translate(435, 225)">
+    <rect x="0" y="0" width="140" height="45" rx="4" fill="#BBDEFB"/>
+    <text x="70" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565C0">第一步</text>
+    <text x="70" y="35" text-anchor="middle" font-size="10" fill="#1565C0">选图片→上传→获取URL</text>
+  </g>
+  <text x="585" y="248" font-size="18" fill="#2196F3">→</text>
+  <g transform="translate(605, 225)">
+    <rect x="0" y="0" width="140" height="45" rx="4" fill="#90CAF9"/>
+    <text x="70" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#0D47A1">第二步</text>
+    <text x="70" y="35" text-anchor="middle" font-size="10" fill="#0D47A1">填表单→提交→关联图片</text>
+  </g>
+  
+  <text x="435" y="300" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#666">⚠️ 不是"选图片就上传"，而是</text>
+  <text x="435" y="320" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#666">"先上传图片，再关联到物品"</text>
+  
+  <!-- FormData 对比 -->
+  <rect x="30" y="360" width="355" height="130" rx="8" fill="#FFEBEE" stroke="#EF5350" stroke-width="2"/>
+  <rect x="30" y="360" width="355" height="28" rx="8" fill="#EF5350"/>
+  <text x="207" y="379" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">📋 FormData vs JSON</text>
+  
+  <text x="50" y="412" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#C62828">❌ 普通JSON请求不能包含文件</text>
+  <text x="50" y="435" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#666">Content-Type: application/json</text>
+  
+  <line x1="50" y1="450" x2="370" y2="450" stroke="#FFCDD2"/>
+  
+  <text x="50" y="472" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">✅ FormData 可以上传文件</text>
+  <text x="50" y="490" font-family="Consolas, monospace" font-size="10" fill="#666">const formData = new FormData();</text>
+  
+  <!-- 文件命名 -->
+  <rect x="415" y="360" width="355" height="130" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <rect x="415" y="360" width="355" height="28" rx="8" fill="#4CAF50"/>
+  <text x="592" y="379" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">📁 文件命名——防止覆盖</text>
+  
+  <text x="435" y="412" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#C62828">❌ 两个用户都上传 photo.jpg → 会覆盖！</text>
+  
+  <text x="435" y="438" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">✅ 服务器生成唯一文件名：</text>
+  
+  <g transform="translate(435, 450)">
+    <rect x="0" y="0" width="80" height="32" rx="4" fill="#C8E6C9"/>
+    <text x="40" y="12" text-anchor="middle" font-size="9" fill="#2E7D32">原名</text>
+    <text x="40" y="26" text-anchor="middle" font-size="9" fill="#666">photo.jpg</text>
+  </g>
+  <text x="525" y="468" font-size="16" fill="#4CAF50">→</text>
+  <g transform="translate(545, 450)">
+    <rect x="0" y="0" width="150" height="32" rx="4" fill="#A5D6A7"/>
+    <text x="75" y="12" text-anchor="middle" font-size="9" fill="#1B5E20">存为</text>
+    <text x="75" y="26" text-anchor="middle" font-size="8" fill="#1B5E20">1703123456789-123456789.jpg</text>
+  </g>
+  
+  <text x="435" y="500" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#666">时间戳 + 随机数 = 唯一文件名</text>
+  
+  <!-- 路由守卫 -->
+  <rect x="30" y="505" width="740" height="130" rx="8" fill="#FFF8E1" stroke="#FFA000" stroke-width="2"/>
+  <rect x="30" y="505" width="740" height="28" rx="8" fill="#FFA000"/>
+  <text x="400" y="524" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" font-weight="bold" fill="white">🚧 路由守卫 = 门禁系统</text>
+  
+  <text x="50" y="558" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" fill="#666">用户访问 /publish（发布页面）时：</text>
+  
+  <g transform="translate(50, 570)">
+    <rect x="0" y="0" width="80" height="32" rx="4" fill="#BBDEFB"/>
+    <text x="40" y="12" text-anchor="middle" font-size="10" fill="#1565C0">访问页面</text>
+    <text x="40" y="26" text-anchor="middle" font-size="10" fill="#1565C0">/publish</text>
+  </g>
+  <text x="140" y="590" font-size="14" fill="#FFA000">→</text>
+  <g transform="translate(155, 570)">
+    <rect x="0" y="0" width="100" height="32" rx="4" fill="#FFE0B2"/>
+    <text x="50" y="12" text-anchor="middle" font-size="10" fill="#E65100">路由守卫检查</text>
+    <text x="50" y="26" text-anchor="middle" font-size="10" fill="#E65100">有Token吗？</text>
+  </g>
+  
+  <text x="265" y="590" font-size="14" fill="#4CAF50">✓有</text>
+  <g transform="translate(295, 570)">
+    <rect x="0" y="0" width="80" height="32" rx="4" fill="#C8E6C9"/>
+    <text x="40" y="20" text-anchor="middle" font-size="10" fill="#2E7D32">放行，显示页面</text>
+  </g>
+  
+  <text x="385" y="590" font-size="14" fill="#EF5350">✗没有</text>
+  <g transform="translate(425, 570)">
+    <rect x="0" y="0" width="120" height="32" rx="4" fill="#FFCDD2"/>
+    <text x="60" y="12" text-anchor="middle" font-size="10" fill="#C62828">拦截</text>
+    <text x="60" y="26" text-anchor="middle" font-size="10" fill="#C62828">跳转 /login?redirect=/publish</text>
+  </g>
+  
+  <text x="50" y="625" font-family="Consolas, monospace" font-size="10" fill="#666">meta: { requiresAuth: true } // 给页面贴标签："需要登录"</text>
+  
+  <!-- 关键代码 -->
+  <rect x="30" y="650" width="740" height="110" rx="8" fill="#263238"/>
+  <text x="50" y="678" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="12" font-weight="bold" fill="#80CBC4">⚡ 关键代码片段</text>
+  <g font-family="Consolas, Monaco, monospace" font-size="10">
+    <text x="50" y="700" fill="#A5D6A7">// 图片上传（用FormData）</text>
+    <text x="50" y="718" fill="#CE93D8">const formData = new FormData();</text>
+    <text x="50" y="736" fill="#CE93D8">formData.append('images', file);</text>
+    <text x="420" y="700" fill="#A5D6A7">// 发布物品</text>
+    <text x="420" y="718" fill="#CE93D8">await Item.create({ title, price, images, userId });</text>
+    <text x="420" y="736" fill="#A5D6A7">// multer限制：最多5张，每张最大5MB</text>
+  </g>
+  
+  <!-- 流程总结 -->
+  <rect x="30" y="775" width="740" height="125" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  <rect x="30" y="775" width="740" height="26" rx="8" fill="#78909C"/>
+  <text x="400" y="793" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="13" font-weight="bold" fill="white">📝 完整发布流程</text>
+  
+  <g transform="translate(50, 815)">
+    <rect x="0" y="0" width="65" height="36" rx="4" fill="#E3F2FD"/>
+    <text x="32" y="14" text-anchor="middle" font-size="9" fill="#1565C0">1.登录</text>
+    <text x="32" y="28" text-anchor="middle" font-size="8" fill="#666">验证身份</text>
+  </g>
+  <text x="123" y="835" font-size="12" fill="#2196F3">→</text>
+  <g transform="translate(138, 815)">
+    <rect x="0" y="0" width="65" height="36" rx="4" fill="#E3F2FD"/>
+    <text x="32" y="14" text-anchor="middle" font-size="9" fill="#1565C0">2.填表单</text>
+    <text x="32" y="28" text-anchor="middle" font-size="8" fill="#666">标题价格等</text>
+  </g>
+  <text x="211" y="835" font-size="12" fill="#2196F3">→</text>
+  <g transform="translate(226, 815)">
+    <rect x="0" y="0" width="65" height="36" rx="4" fill="#E3F2FD"/>
+    <text x="32" y="14" text-anchor="middle" font-size="9" fill="#1565C0">3.选图片</text>
+    <text x="32" y="28" text-anchor="middle" font-size="8" fill="#666">最多5张</text>
+  </g>
+  <text x="299" y="835" font-size="12" fill="#2196F3">→</text>
+  <g transform="translate(314, 815)">
+    <rect x="0" y="0" width="65" height="36" rx="4" fill="#E3F2FD"/>
+    <text x="32" y="14" text-anchor="middle" font-size="9" fill="#1565C0">4.上传</text>
+    <text x="32" y="28" text-anchor="middle" font-size="8" fill="#666">获取URL</text>
+  </g>
+  <text x="387" y="835" font-size="12" fill="#2196F3">→</text>
+  <g transform="translate(402, 815)">
+    <rect x="0" y="0" width="65" height="36" rx="4" fill="#E3F2FD"/>
+    <text x="32" y="14" text-anchor="middle" font-size="9" fill="#1565C0">5.预览</text>
+    <text x="32" y="28" text-anchor="middle" font-size="8" fill="#666">确认无误</text>
+  </g>
+  <text x="475" y="835" font-size="12" fill="#4CAF50">→</text>
+  <g transform="translate(490, 815)">
+    <rect x="0" y="0" width="65" height="36" rx="4" fill="#C8E6C9"/>
+    <text x="32" y="14" text-anchor="middle" font-size="9" fill="#2E7D32">6.提交</text>
+    <text x="32" y="28" text-anchor="middle" font-size="8" fill="#2E7D32">发布成功</text>
+  </g>
+  
+  <text x="50" y="875" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#EF5350">⚠️ 防重复提交：submitting变量控制按钮状态</text>
+  <text x="50" y="892" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="10" fill="#666">if (submitting.value) return; // 正在提交就不再提交</text>
+  
+  <!-- 记忆口诀 -->
+  <rect x="30" y="920" width="740" height="60" rx="8" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2"/>
+  <text x="400" y="948" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="16" font-weight="bold" fill="#283593">📌 记忆口诀</text>
+  <text x="400" y="970" text-anchor="middle" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="14" fill="#3F51B5">图片先上传再关联，路由守卫当门禁</text>
+  
+  <!-- 页码 -->
+  <text x="770" y="990" text-anchor="end" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="11" fill="#999">09 / 19</text>
+</svg>

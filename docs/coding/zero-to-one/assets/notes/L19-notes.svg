@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#FF8F5C"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="#FFFEF8"/>
+  <rect x="30" y="30" width="740" height="940" rx="8" fill="white" filter="url(#shadow)"/>
+  
+  <!-- 标题区 -->
+  <rect x="30" y="30" width="740" height="80" rx="8" fill="url(#headerGrad)"/>
+  <rect x="30" y="60" width="740" height="50" fill="url(#headerGrad)"/>
+  <text x="50" y="65" font-family="system-ui, sans-serif" font-size="12" fill="white" opacity="0.9">📚 第19课 / 就业指导</text>
+  <text x="50" y="95" font-family="system-ui, sans-serif" font-size="26" font-weight="bold" fill="white">展示你的AI协作能力</text>
+  <text x="720" y="95" font-family="system-ui, sans-serif" font-size="14" fill="white" opacity="0.8">19/19</text>
+  
+  <!-- 核心观点 -->
+  <rect x="50" y="130" width="700" height="60" rx="6" fill="#FFF8E1"/>
+  <rect x="50" y="130" width="6" height="60" fill="#FFC107" rx="3"/>
+  <text x="70" y="155" font-family="system-ui, sans-serif" font-size="11" fill="#F57C00" font-weight="500">💡 核心观点</text>
+  <text x="70" y="175" font-family="system-ui, sans-serif" font-size="13" fill="#333">你不是"会写代码的程序员"，是"能用AI高效交付产品的开发者"</text>
+  
+  <!-- 模块1：核心竞争力 -->
+  <text x="50" y="220" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#333">💪 你的核心竞争力</text>
+  
+  <rect x="50" y="235" width="170" height="90" rx="6" fill="#E8F5E9" stroke="#4CAF50"/>
+  <text x="135" y="258" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#388E3C" text-anchor="middle">1. 需求描述能力</text>
+  <text x="135" y="278" font-family="system-ui, sans-serif" font-size="9" fill="#333" text-anchor="middle">把模糊想法变成</text>
+  <text x="135" y="295" font-family="system-ui, sans-serif" font-size="9" fill="#333" text-anchor="middle">AI能理解的具体需求</text>
+  <text x="135" y="312" font-family="system-ui, sans-serif" font-size="9" fill="#666" text-anchor="middle">用5W1H方法</text>
+  
+  <rect x="230" y="235" width="170" height="90" rx="6" fill="#E3F2FD" stroke="#2196F3"/>
+  <text x="315" y="258" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1976D2" text-anchor="middle">2. 技术决策能力</text>
+  <text x="315" y="278" font-family="system-ui, sans-serif" font-size="9" fill="#333" text-anchor="middle">AI给你三个方案</text>
+  <text x="315" y="295" font-family="system-ui, sans-serif" font-size="9" fill="#333" text-anchor="middle">你选哪个？为什么？</text>
+  <text x="315" y="312" font-family="system-ui, sans-serif" font-size="9" fill="#666" text-anchor="middle">最终是你拍板</text>
+  
+  <rect x="410" y="235" width="170" height="90" rx="6" fill="#FFF3E0" stroke="#FF9800"/>
+  <text x="495" y="258" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#F57C00" text-anchor="middle">3. 快速学习能力</text>
+  <text x="495" y="278" font-family="system-ui, sans-serif" font-size="9" fill="#333" text-anchor="middle">传统方式：看文档</text>
+  <text x="495" y="295" font-family="system-ui, sans-serif" font-size="9" fill="#333" text-anchor="middle">你的方式：问AI</text>
+  <text x="495" y="312" font-family="system-ui, sans-serif" font-size="9" fill="#666" text-anchor="middle">1周 → 1天</text>
+  
+  <rect x="590" y="235" width="160" height="90" rx="6" fill="#F3E5F5" stroke="#9C27B0"/>
+  <text x="670" y="258" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#7B1FA2" text-anchor="middle">4. 质量把控能力</text>
+  <text x="670" y="278" font-family="system-ui, sans-serif" font-size="9" fill="#333" text-anchor="middle">AI写的代码</text>
+  <text x="670" y="295" font-family="system-ui, sans-serif" font-size="9" fill="#333" text-anchor="middle">你怎么知道对不对？</text>
+  <text x="670" y="312" font-family="system-ui, sans-serif" font-size="9" fill="#666" text-anchor="middle">靠验收！</text>
+  
+  <!-- 效率对比 -->
+  <rect x="50" y="340" width="700" height="55" rx="6" fill="#E8F5E9"/>
+  <text x="70" y="365" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2E7D32">⚡ 效率差距：3-10倍</text>
+  <text x="250" y="365" font-family="system-ui, sans-serif" font-size="10" fill="#333">传统开发：写代码4h + 查文档2h + 改bug3h = 1个功能</text>
+  <text x="250" y="385" font-family="system-ui, sans-serif" font-size="10" fill="#4CAF50">AI协作：描述需求1h + 审核方案1h + 验收调整2h = 3个功能</text>
+  
+  <!-- 模块2：简历写法 -->
+  <text x="50" y="425" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#333">📝 简历写法：大方写"AI协作开发"</text>
+  
+  <rect x="50" y="440" width="700" height="115" rx="6" fill="#FAFAFA" stroke="#E0E0E0"/>
+  <text x="70" y="463" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#333">项目名称：校园闲置交易平台</text>
+  <text x="70" y="483" font-family="system-ui, sans-serif" font-size="9" fill="#666">协作方式：AI辅助开发 - 使用 opencode/Cursor 等 AI 编程工具</text>
+  <text x="70" y="500" font-family="system-ui, sans-serif" font-size="9" fill="#666">负责：需求分析、技术决策、功能验收 - 2周完成传统方式2个月的工作量</text>
+  <text x="70" y="517" font-family="system-ui, sans-serif" font-size="9" fill="#666">技术栈：Vue 3 + Node.js + Express + SQLite</text>
+  <text x="70" y="534" font-family="system-ui, sans-serif" font-size="9" fill="#666">核心能力：✓ 能清晰描述需求让AI理解  ✓ 能判断AI方案是否合理  ✓ 能快速学习新技术</text>
+  <text x="70" y="550" font-family="system-ui, sans-serif" font-size="9" fill="#4CAF50">💡 这是你的优势，不是劣势！</text>
+  
+  <!-- 模块3：面试话术 -->
+  <text x="50" y="585" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#333">💬 面试话术：自信回答</text>
+  
+  <rect x="50" y="600" width="700" height="120" rx="6" fill="#FAFAFA" stroke="#E0E0E0"/>
+  
+  <rect x="60" y="610" width="335" height="50" rx="4" fill="#E3F2FD"/>
+  <text x="70" y="628" font-family="system-ui, sans-serif" font-size="9" fill="#1976D2" font-weight="600">Q: 这个项目是你自己做的吗？</text>
+  <text x="70" y="645" font-family="system-ui, sans-serif" font-size="8" fill="#333">A: 是的，从需求分析到上线都是我负责。代码实现上我使用</text>
+  <text x="70" y="658" font-family="system-ui, sans-serif" font-size="8" fill="#333">AI工具提高效率，但关键决策都是我做的。</text>
+  
+  <rect x="405" y="610" width="335" height="50" rx="4" fill="#E8F5E9"/>
+  <text x="415" y="628" font-family="system-ui, sans-serif" font-size="9" fill="#388E3C" font-weight="600">Q: 没有AI你能写代码吗？</text>
+  <text x="415" y="645" font-family="system-ui, sans-serif" font-size="8" fill="#333">A: 当然可以。但为什么要拒绝效率提升10倍的工具？</text>
+  <text x="415" y="658" font-family="system-ui, sans-serif" font-size="8" fill="#333">我的核心价值是理解业务、做决策、把控质量。</text>
+  
+  <rect x="60" y="665" width="335" height="50" rx="4" fill="#FFF3E0"/>
+  <text x="70" y="683" font-family="system-ui, sans-serif" font-size="9" fill="#F57C00" font-weight="600">Q: AI写的代码有bug怎么办？</text>
+  <text x="70" y="700" font-family="system-ui, sans-serif" font-size="8" fill="#333">A: 发现bug本身就是一个能力。我负责验收，不是AI自己说了算。</text>
+  <text x="70" y="713" font-family="system-ui, sans-serif" font-size="8" fill="#333">把问题说清楚，答案就出来了一半。</text>
+  
+  <rect x="405" y="665" width="335" height="50" rx="4" fill="#F3E5F5"/>
+  <text x="415" y="683" font-family="system-ui, sans-serif" font-size="9" fill="#7B1FA2" font-weight="600">Q: 我们公司不用AI</text>
+  <text x="415" y="700" font-family="system-ui, sans-serif" font-size="8" fill="#333">A: AI编程工具普及速度很快，未来不用AI的程序员会像</text>
+  <text x="415" y="713" font-family="system-ui, sans-serif" font-size="8" fill="#333">现在不用搜索引擎的一样少见。</text>
+  
+  <!-- 模块4：公司筛选 -->
+  <text x="50" y="745" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#333">🎯 公司筛选：双向选择</text>
+  
+  <rect x="50" y="760" width="345" height="80" rx="6" fill="#E8F5E9"/>
+  <text x="222" y="785" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2E7D32" text-anchor="middle">✅ 好公司的信号</text>
+  <text x="70" y="805" font-family="system-ui, sans-serif" font-size="10" fill="#333">• 问你"怎么让AI理解需求"</text>
+  <text x="70" y="822" font-family="system-ui, sans-serif" font-size="10" fill="#333">• 问你"怎么判断AI方案好不好"</text>
+  <text x="70" y="839" font-family="system-ui, sans-serif" font-size="10" fill="#333">• 对AI协作感兴趣</text>
+  
+  <rect x="405" y="760" width="345" height="80" rx="6" fill="#FFEBEE"/>
+  <text x="577" y="785" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#C62828" text-anchor="middle">❌ 不值得去的信号</text>
+  <text x="425" y="805" font-family="system-ui, sans-serif" font-size="10" fill="#333">• "AI写的代码不算数"</text>
+  <text x="425" y="822" font-family="system-ui, sans-serif" font-size="10" fill="#333">• "你必须能手写所有代码"</text>
+  <text x="425" y="839" font-family="system-ui, sans-serif" font-size="10" fill="#333">• 对AI话题不屑</text>
+  
+  <!-- 模块5：独特价值 -->
+  <text x="50" y="870" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#333">🏆 你的独特价值主张</text>
+  
+  <rect x="50" y="885" width="700" height="55" rx="6" fill="#FFF8E1"/>
+  <text x="70" y="910" font-family="system-ui, sans-serif" font-size="12" fill="#333">"我最大的优势不是<tspan fill="#F57C00" font-weight="600">'会写代码'</tspan>，而是<tspan fill="#4CAF50" font-weight="600">'能用AI高效交付产品'</tspan>。"</text>
+  <text x="70" y="930" font-family="system-ui, sans-serif" font-size="10" fill="#666">我用2周完成了传统方式需要2个月的工作量。这套方法论，可以应用到任何新项目上。</text>
+  
+  <!-- 记忆口诀 -->
+  <rect x="50" y="955" width="700" height="50" rx="6" fill="#E8F5E9"/>
+  <text x="70" y="975" font-family="system-ui, sans-serif" font-size="11" fill="#388E3C" font-weight="500">🎯 记忆口诀</text>
+  <text x="70" y="995" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#1B5E20">"会用AI不是减分项，是核心竞争力"</text>
+  
+  <!-- 页码 -->
+  <text x="400" y="960" font-family="system-ui, sans-serif" font-size="10" fill="#999" text-anchor="middle">学霸笔记 · AI协作开发教程</text>
+</svg>
