@@ -19,6 +19,7 @@ export default withMermaid(
     title: 'VibeWork Lab',
     description: '用 AI 赋能创造力 - 实战课程，从零到一，快速上手',
     lang: 'zh-CN',
+    srcDir: 'docs',
 
     lastUpdated: true,
     cleanUrls: true,
